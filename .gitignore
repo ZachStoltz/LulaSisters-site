@@ -1,0 +1,7 @@
+.DS_Store
+src/server/*
+node_modules
+typings
+.settings
+.idea
+dist/bundle*
