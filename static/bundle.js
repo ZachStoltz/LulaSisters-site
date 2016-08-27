@@ -17108,30 +17108,6 @@
 /* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(14);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function () {
-	  return _react2.default.createElement(
-	    'h1',
-	    null,
-	    'Hello'
-	  );
-	};
-
-/***/ },
-/* 234 */
-/***/ function(module, exports, __webpack_require__) {
-
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
@@ -17144,10 +17120,87 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	exports.default = function (props) {
+	  return _react2.default.createElement(
+	    "section",
+	    { id: "about" },
+	    _react2.default.createElement(
+	      "div",
+	      { className: "wrapper" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "paper" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "img-container" },
+	          _react2.default.createElement("img", { src: props.aboutUsPic, alt: "Dicia & Erica" })
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "bio" },
+	          _react2.default.createElement(
+	            "h3",
+	            null,
+	            "LuLa Sisters: Dicia & Erica"
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "Chia kale chips paleo asymmetrical, cardigan pickled umami cred listicle wolf before they sold out disrupt. Schlitz lo-fi photo booth offal, marfa trust fund tumblr vegan bespoke swag banjo you probably haven't heard of them. Hoodie lomo godard post-ironic, gentrify microdosing selvage plaid photo booth yuccie umami cornhole. Shoreditch pickled brunch, kinfolk sartorial four loko beard etsy hammock occupy. Skateboard tofu poutine kinfolk taxidermy photo booth williamsburg, butcher normcore. Twee waistcoat bushwick readymade cliche, typewriter venmo. Sriracha distillery forage taxidermy, seitan flannel selvage fap."
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "social-media" },
+	            _react2.default.createElement(
+	              "a",
+	              { className: "btn fb-shop" },
+	              _react2.default.createElement(
+	                "span",
+	                null,
+	                "Shop Our Online Pop-up Mondays @ 8pm EST"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "a",
+	              { className: "btn insta" },
+	              _react2.default.createElement(
+	                "span",
+	                null,
+	                "Follow Us on Instagram"
+	              )
+	            )
+	          )
+	        )
+	      )
+	    )
+	  );
+	};
+
+/***/ },
+/* 234 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _Headline = __webpack_require__(539);
+	
+	var _Headline2 = _interopRequireDefault(_Headline);
+	
+	var _react = __webpack_require__(14);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
 	var Layout = function Layout(props) {
 	  return _react2.default.createElement(
-	    "div",
-	    { className: "app-container" },
+	    'div',
+	    { className: 'app-container' },
+	    _react2.default.createElement(_Headline2.default, null),
 	    props.children
 	  );
 	};
@@ -34983,7 +35036,7 @@
 	
 	
 	// module
-	exports.push([module.id, "* {\n  box-sizing: border-box; }\n", ""]);
+	exports.push([module.id, "* {\n  box-sizing: border-box; }\n\n/******* Global Styles **************/\n.wrapper {\n  width: 1440px;\n  max-width: 90%;\n  margin: 0 auto; }\n\n.btn {\n  border: none;\n  outline: none;\n  border-radius: 2rem;\n  padding: .5rem 2rem;\n  font-weight: 700;\n  text-decoration: none;\n  color: white;\n  text-align: center; }\n\n.btn-secondary {\n  background: rgba(250, 250, 250, 0.35); }\n\n.btn-small {\n  font-size: .9rem; }\n\n.insta {\n  background: #64ccc9; }\n\n.fb-shop {\n  background: #7979a7; }\n\n/*********** App Container ***********/\n.app-container {\n  display: flex;\n  flex-direction: column; }\n\n/************ Header Container *********/\n#banner {\n  background: url(\"/static/style/banner.jpg\");\n  /* Old browsers */\n  background: -moz-linear-gradient(left, #9a7a43 0%, #985464 26%, #905080 44%, #905080 44%, #5d668f 69%, #477d88 100%);\n  /* FF3.6-15 */\n  background: -webkit-linear-gradient(left, #9a7a43 0%, #985464 26%, #905080 44%, #905080 44%, #5d668f 69%, #477d88 100%);\n  /* Chrome10-25,Safari5.1-6 */\n  background: linear-gradient(to right, #9a7a43 0%, #985464 26%, #905080 44%, #905080 44%, #5d668f 69%, #477d88 100%);\n  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }\n  #banner header {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    padding: 2rem 0 20rem; }\n    #banner header nav {\n      padding: 2rem 0; }\n      #banner header nav > a:not(.btn) {\n        text-decoration: none;\n        color: white;\n        font-size: .9rem;\n        margin-right: 2rem; }\n\n/************ About Us Section ***********/\n#about {\n  background: #d8e5f3;\n  padding: 2rem 0 6.5rem 0; }\n  #about .paper {\n    box-shadow: 0 0 3rem 0.3rem rgba(0, 0, 0, 0.69);\n    border-radius: 1rem;\n    background: white;\n    margin-top: -9rem;\n    padding: 2rem;\n    display: flex;\n    flex-direction: row; }\n    #about .paper .img-container,\n    #about .paper .bio {\n      width: 50%; }\n    #about .paper .bio {\n      flex-direction: column; }\n      #about .paper .bio > h3 {\n        text-align: center;\n        font-family: cursive;\n        font-size: 2rem;\n        margin: 0 0 .3rem 0; }\n      #about .paper .bio .social-media {\n        width: 100%;\n        display: flex;\n        flex-direction: column; }\n        #about .paper .bio .social-media .btn {\n          margin-bottom: .5rem;\n          padding: 1rem 2rem; }\n", ""]);
 	
 	// exports
 
@@ -35321,6 +35374,66 @@
 		// When the module is disposed, remove the <style> tags
 		module.hot.dispose(function() { update(); });
 	}
+
+/***/ },
+/* 539 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(14);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function () {
+	  return _react2.default.createElement(
+	    "section",
+	    { id: "banner" },
+	    _react2.default.createElement(
+	      "div",
+	      { className: "wrapper" },
+	      _react2.default.createElement(
+	        "header",
+	        null,
+	        _react2.default.createElement(
+	          "h1",
+	          null,
+	          "LuLaRoe Placeholder"
+	        ),
+	        _react2.default.createElement(
+	          "nav",
+	          null,
+	          _react2.default.createElement(
+	            "a",
+	            { href: "#" },
+	            "About LuLaRoe"
+	          ),
+	          _react2.default.createElement(
+	            "a",
+	            { href: "#" },
+	            "Team LuLa Sisters"
+	          ),
+	          _react2.default.createElement(
+	            "a",
+	            { href: "#" },
+	            "For Customers"
+	          ),
+	          _react2.default.createElement(
+	            "a",
+	            { href: "#", className: "btn btn-small btn-secondary" },
+	            "Join Our Team"
+	          )
+	        )
+	      )
+	    )
+	  );
+	};
 
 /***/ }
 /******/ ])));

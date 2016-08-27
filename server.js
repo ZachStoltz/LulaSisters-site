@@ -4,6 +4,7 @@ const express = require('express');
 const hbs = require('express-handlebars');
 const path = require('path');
 const serveStatic = require('serve-static');
+const favicon = require('serve-favicon');
 // Server Side React
 const { match, RouterContext } = require('react-router');
 const ReactDOMServer = require('react-dom/server');
@@ -17,6 +18,7 @@ app.engine('hbs', hbs({ defaultLayout: 'main', extname: '.hbs' }));
 app.set('view engine', 'hbs');
 
 app.use('/static', serveStatic(path.join(__dirname, '/static')));
+app.use(favicon(`${__dirname}/static/style/favicon.ico`));
 
 app.use((req, res) => {
   match({ routes: routes(), location: req.url }, (error, redirectLocation, renderProps) => {

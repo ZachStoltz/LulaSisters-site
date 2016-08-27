@@ -1,3 +1,109 @@
-*{
+$white: white;
+$grey-background: #d8e5f3;
+$btn-secondary: rgba(250, 250, 250, 0.35);
+$insta: #64ccc9;
+$fb-shop: #7979a7;
+
+* {
   box-sizing: border-box;
+}
+
+/******* Global Styles **************/
+.wrapper {
+  width:1440px;
+  max-width: 90%;
+  margin:0 auto;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  border-radius:2rem;
+  padding: .5rem 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.btn-secondary {
+  background: $btn-secondary;
+}
+.btn-small {
+  font-size: .9rem;
+}
+.insta {
+  background: $insta;
+}
+.fb-shop {
+  background: $fb-shop;
+}
+
+/*********** App Container ***********/
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/************ Header Container *********/
+#banner {
+  background: url("/static/style/banner.jpg"); /* Old browsers */
+  background: -moz-linear-gradient(left,  #9a7a43 0%, #985464 26%, #905080 44%, #905080 44%, #5d668f 69%, #477d88 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #9a7a43 0%,#985464 26%,#905080 44%,#905080 44%,#5d668f 69%,#477d88 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #9a7a43 0%,#985464 26%,#905080 44%,#905080 44%,#5d668f 69%,#477d88 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 0 20rem;
+
+    nav {
+      padding: 2rem 0;
+      & > a:not(.btn) {
+        text-decoration: none;
+        color: $white;
+        font-size: .9rem;
+        margin-right: 2rem;
+      }
+    }
+  }
+}
+
+/************ About Us Section ***********/
+#about {
+  background: $grey-background;
+  padding: 2rem 0 6.5rem 0;
+
+  .paper {
+    box-shadow: 0 0 3rem .3rem rgba(0, 0, 0, 0.69);
+    border-radius: 1rem;
+    background: $white;
+    margin-top: -9rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+
+    .img-container,
+    .bio {
+      width: 50%;
+    }
+    .bio {
+      flex-direction: column;
+      & > h3 {
+        text-align: center;
+        font-family: cursive;
+        font-size: 2rem;
+        margin: 0 0 .3rem 0;
+      }
+      & .social-media {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        & .btn {
+          margin-bottom: .5rem;
+          padding: 1rem 2rem;
+        }
+      }
+    }
+  }
 }
