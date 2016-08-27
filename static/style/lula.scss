@@ -122,24 +122,121 @@ footer {
 
   & .footer-content {
     display: flex;
-    flex: 1;
     align-items: baseline;
-  }
+    padding-top: 1rem;
+    justify-content: space-between;
 
-  & .email-form {
-    display: flex;
-    flex-direction: column;
-    flex-grow:2;
-
-    input, textarea {
-      margin: .3rem 0;
-      padding: .4rem;
-      border: none;
-      outline: none;
-      border-radius: .3rem;
+    & > div {
+      display:flex;
+      flex-direction: column;
     }
-    textarea {
-      resize: none;
+    & div > h4 {
+      margin: 0;
+    }
+    & > div:nth-child(2) {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding:.5rem;
+      }
+    }
+
+    & > div:nth-child(3), & .email-form {
+      width: 25%;
+    }
+
+    & > div > div > .fa {
+      text-align: center;
+      font-size: 1.3rem;
+      width: 10%;
+      background: $grey-background;
+      border-top-left-radius: .5rem;
+      border-bottom-left-radius: .5rem;
+    }
+
+    & > div > .email,
+    & > div > .fb {
+      display: flex;
+      margin-bottom: .2rem;
+
+      & a, & .fa {
+        padding: .3rem;
+        border: none;
+        outline: none;
+      }
+
+      & a {
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+        background: $submit;
+        width: 90%;
+        font-weight: 300;
+      }
+    }
+
+    & .email-form {
+      display: flex;
+      flex-direction: column;
+      form {
+        display: flex;
+        flex-direction: column;
+
+        input, textarea {
+          margin: .3rem 0;
+          padding: .4rem;
+          border: none;
+          outline: none;
+          border-radius: .3rem;
+        }
+
+        & .input-group {
+          display: flex;
+          flex-direction: row;
+          margin: .3rem 0;
+
+          label {
+            width: 20%;
+            border:none;
+            outline:none;
+            padding: .3rem;
+            font-weight: 300;
+            border-top-left-radius: .3rem;
+            border-bottom-left-radius: .3rem;
+            background: $insta;
+            color: #47475f;
+          }
+          input {
+            margin: 0;
+            width: 85%;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: .3rem;
+            border-bottom-right-radius: .3rem;
+          }
+        }
+        & .input-group.textarea {
+          flex-direction: column;
+
+          label {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-top-left-radius: .3rem;
+            border-top-right-radius: .3rem;
+            width: 100%;
+          }
+          textarea {
+            margin: 0;
+            width: 100%;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: .3rem;
+            border-bottom-right-radius: .3rem;
+          }
+        }
+        textarea {
+          resize: none;
+        }
+      }
     }
   }
   .copy {
