@@ -1,10 +1,11 @@
+import { Link } from 'react-router';
 import React from 'react';
 
 export default () => (
   <section id="banner">
     <div className="wrapper">
       <header>
-        <h1>LuLaRoe Placeholder</h1>
+        <img src={'/static/style/logo.png'} alt="LuLaRoe: Simply Comfortable" />
         <nav>
           <a href="#">
             About LuLaRoe

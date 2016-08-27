@@ -35379,11 +35379,13 @@
 /* 539 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+	
+	var _reactRouter = __webpack_require__(457);
 	
 	var _react = __webpack_require__(14);
 	
@@ -35393,41 +35395,37 @@
 	
 	exports.default = function () {
 	  return _react2.default.createElement(
-	    "section",
-	    { id: "banner" },
+	    'section',
+	    { id: 'banner' },
 	    _react2.default.createElement(
-	      "div",
-	      { className: "wrapper" },
+	      'div',
+	      { className: 'wrapper' },
 	      _react2.default.createElement(
-	        "header",
+	        'header',
 	        null,
+	        _react2.default.createElement('img', { src: '/static/style/logo.png', alt: 'LuLaRoe: Simply Comfortable' }),
 	        _react2.default.createElement(
-	          "h1",
-	          null,
-	          "LuLaRoe Placeholder"
-	        ),
-	        _react2.default.createElement(
-	          "nav",
+	          'nav',
 	          null,
 	          _react2.default.createElement(
-	            "a",
-	            { href: "#" },
-	            "About LuLaRoe"
+	            'a',
+	            { href: '#' },
+	            'About LuLaRoe'
 	          ),
 	          _react2.default.createElement(
-	            "a",
-	            { href: "#" },
-	            "Team LuLa Sisters"
+	            'a',
+	            { href: '#' },
+	            'Team LuLa Sisters'
 	          ),
 	          _react2.default.createElement(
-	            "a",
-	            { href: "#" },
-	            "For Customers"
+	            'a',
+	            { href: '#' },
+	            'For Customers'
 	          ),
 	          _react2.default.createElement(
-	            "a",
-	            { href: "#", className: "btn btn-small btn-secondary" },
-	            "Join Our Team"
+	            'a',
+	            { href: '#', className: 'btn btn-small btn-secondary' },
+	            'Join Our Team'
 	          )
 	        )
 	      )
