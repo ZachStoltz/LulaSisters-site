@@ -1,3 +1,4 @@
+import Footer from './Footer.jsx';
 import Headline from './Headline.jsx';
 import React from 'react';
 
@@ -5,6 +6,7 @@ const Layout = (props) => (
   <div className="app-container">
     <Headline />
     {props.children}
+    <Footer />
   </div>
 );
 

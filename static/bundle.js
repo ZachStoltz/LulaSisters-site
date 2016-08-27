@@ -17186,6 +17186,10 @@
 	  value: true
 	});
 	
+	var _Footer = __webpack_require__(540);
+	
+	var _Footer2 = _interopRequireDefault(_Footer);
+	
 	var _Headline = __webpack_require__(539);
 	
 	var _Headline2 = _interopRequireDefault(_Headline);
@@ -17201,7 +17205,8 @@
 	    'div',
 	    { className: 'app-container' },
 	    _react2.default.createElement(_Headline2.default, null),
-	    props.children
+	    props.children,
+	    _react2.default.createElement(_Footer2.default, null)
 	  );
 	};
 	
@@ -35036,7 +35041,7 @@
 	
 	
 	// module
-	exports.push([module.id, "* {\n  box-sizing: border-box; }\n\n/******* Global Styles **************/\n.wrapper {\n  width: 1440px;\n  max-width: 90%;\n  margin: 0 auto; }\n\n.btn {\n  border: none;\n  outline: none;\n  border-radius: 2rem;\n  padding: .5rem 2rem;\n  font-weight: 700;\n  text-decoration: none;\n  color: white;\n  text-align: center; }\n\n.btn-secondary {\n  background: rgba(250, 250, 250, 0.35); }\n\n.btn-small {\n  font-size: .9rem; }\n\n.insta {\n  background: #64ccc9; }\n\n.fb-shop {\n  background: #7979a7; }\n\n/*********** App Container ***********/\n.app-container {\n  display: flex;\n  flex-direction: column; }\n\n/************ Header Container *********/\n#banner {\n  background: url(\"/static/style/banner.jpg\");\n  /* Old browsers */\n  background: -moz-linear-gradient(left, #9a7a43 0%, #985464 26%, #905080 44%, #905080 44%, #5d668f 69%, #477d88 100%);\n  /* FF3.6-15 */\n  background: -webkit-linear-gradient(left, #9a7a43 0%, #985464 26%, #905080 44%, #905080 44%, #5d668f 69%, #477d88 100%);\n  /* Chrome10-25,Safari5.1-6 */\n  background: linear-gradient(to right, #9a7a43 0%, #985464 26%, #905080 44%, #905080 44%, #5d668f 69%, #477d88 100%);\n  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }\n  #banner header {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    padding: 2rem 0 20rem; }\n    #banner header nav {\n      padding: 2rem 0; }\n      #banner header nav > a:not(.btn) {\n        text-decoration: none;\n        color: white;\n        font-size: .9rem;\n        margin-right: 2rem; }\n\n/************ About Us Section ***********/\n#about {\n  background: #d8e5f3;\n  padding: 2rem 0 6.5rem 0; }\n  #about .paper {\n    box-shadow: 0 0 3rem 0.3rem rgba(0, 0, 0, 0.69);\n    border-radius: 1rem;\n    background: white;\n    margin-top: -9rem;\n    padding: 2rem;\n    display: flex;\n    flex-direction: row; }\n    #about .paper .img-container,\n    #about .paper .bio {\n      width: 50%; }\n    #about .paper .bio {\n      flex-direction: column; }\n      #about .paper .bio > h3 {\n        text-align: center;\n        font-family: cursive;\n        font-size: 2rem;\n        margin: 0 0 .3rem 0; }\n      #about .paper .bio .social-media {\n        width: 100%;\n        display: flex;\n        flex-direction: column; }\n        #about .paper .bio .social-media .btn {\n          margin-bottom: .5rem;\n          padding: 1rem 2rem; }\n", ""]);
+	exports.push([module.id, "* {\n  box-sizing: border-box; }\n\nhtml {\n  font-family: \"Roboto\", Helvetica, sans-serif; }\n\n/******* Global Styles **************/\n.wrapper {\n  width: 1440px;\n  max-width: 90%;\n  margin: 0 auto; }\n\n.btn {\n  border: none;\n  outline: none;\n  border-radius: 2rem;\n  padding: .5rem 2rem;\n  font-weight: 300;\n  text-decoration: none;\n  color: white;\n  text-align: center; }\n\n.btn-secondary {\n  background: rgba(250, 250, 250, 0.35); }\n\n.btn-small {\n  font-size: .9rem; }\n\n.insta {\n  background: #64ccc9; }\n\n.fb-shop {\n  background: #7979a7; }\n\n.btn-submit {\n  background: #f67599; }\n\n/*********** App Container ***********/\n.app-container {\n  display: flex;\n  flex-direction: column; }\n\n/************ Header Container *********/\n#banner {\n  background: url(\"/static/style/banner.jpg\");\n  /* Old browsers */\n  background: -moz-linear-gradient(left, #9a7a43 0%, #985464 26%, #905080 44%, #905080 44%, #5d668f 69%, #477d88 100%);\n  /* FF3.6-15 */\n  background: -webkit-linear-gradient(left, #9a7a43 0%, #985464 26%, #905080 44%, #905080 44%, #5d668f 69%, #477d88 100%);\n  /* Chrome10-25,Safari5.1-6 */\n  background: linear-gradient(to right, #9a7a43 0%, #985464 26%, #905080 44%, #905080 44%, #5d668f 69%, #477d88 100%);\n  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }\n  #banner header {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    padding: 2rem 0 20rem; }\n    #banner header nav {\n      padding: 2rem 0; }\n      #banner header nav > a:not(.btn) {\n        text-decoration: none;\n        color: white;\n        font-size: .9rem;\n        margin-right: 2rem; }\n\n/************ About Us Section ***********/\n#about {\n  background: #d8e5f3;\n  padding: 2rem 0 6.5rem 0; }\n  #about .paper {\n    box-shadow: 0 0 3rem 0.3rem rgba(0, 0, 0, 0.69);\n    border-radius: 1rem;\n    background: white;\n    margin-top: -9rem;\n    padding: 2rem;\n    display: flex;\n    flex-direction: row; }\n    #about .paper .img-container,\n    #about .paper .bio {\n      width: 50%; }\n    #about .paper .bio {\n      flex-direction: column; }\n      #about .paper .bio > h3 {\n        text-align: center;\n        font-family: cursive;\n        font-size: 2rem;\n        margin: 0 0 .3rem 0; }\n      #about .paper .bio .social-media {\n        width: 100%;\n        display: flex;\n        flex-direction: column; }\n        #about .paper .bio .social-media .btn {\n          margin-bottom: .5rem;\n          padding: 1rem 2rem; }\n\n/*********** Footer Section **************/\nfooter {\n  background: #7979a7; }\n  footer .footer-content {\n    display: flex;\n    flex: 1;\n    align-items: baseline; }\n  footer .email-form {\n    display: flex;\n    flex-direction: column;\n    flex-grow: 2; }\n    footer .email-form input, footer .email-form textarea {\n      margin: .3rem 0;\n      padding: .4rem;\n      border: none;\n      outline: none;\n      border-radius: .3rem; }\n    footer .email-form textarea {\n      resize: none; }\n  footer .copy {\n    padding: .3rem; }\n  footer a {\n    text-decoration: none;\n    color: white; }\n", ""]);
 	
 	// exports
 
@@ -35429,6 +35434,158 @@
 	          )
 	        )
 	      )
+	    )
+	  );
+	};
+
+/***/ },
+/* 540 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _EmailForm = __webpack_require__(541);
+	
+	var _EmailForm2 = _interopRequireDefault(_EmailForm);
+	
+	var _react = __webpack_require__(14);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function () {
+	  return _react2.default.createElement(
+	    'footer',
+	    null,
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'wrapper footer-content' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'insta-feed' },
+	        'PHOTOS FROM INSTAGRAM'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'h5',
+	          null,
+	          'Getting Started'
+	        ),
+	        _react2.default.createElement(
+	          'ul',
+	          null,
+	          _react2.default.createElement(
+	            'a',
+	            null,
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'How to shop'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            null,
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'How to shop'
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'h5',
+	          null,
+	          'Wanna Talk?'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Pug synth paleo vinyl messenger bag, heirloom gochujang retro vice meggings photo booth flexitarian. Thundercats before they sold out lumbersexual distillery. Retro gluten-free irony, meh farm-to-table quinoa cliche drinking vinegar brunch cold-pressed.'
+	        ),
+	        _react2.default.createElement(
+	          'span',
+	          null,
+	          '@'
+	        ),
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'mailto:erica@stoltz.io?cc=dicia@marguccio.com&subject=Heyo%20Lets%20talk%20Lularoe' },
+	          'lulasistersdiciaanderica@gmail.com'
+	        )
+	      ),
+	      _react2.default.createElement(_EmailForm2.default, { className: 'email-form' })
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'wrapper' },
+	      _react2.default.createElement('hr', null),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'copy' },
+	        _react2.default.createElement(
+	          'span',
+	          null,
+	          '© Two and a Half Girls, LLC'
+	        )
+	      )
+	    )
+	  );
+	};
+
+/***/ },
+/* 541 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(14);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function (props) {
+	  return _react2.default.createElement(
+	    "form",
+	    { className: props.className },
+	    _react2.default.createElement(
+	      "label",
+	      { htmlFor: "name-input" },
+	      "Name"
+	    ),
+	    _react2.default.createElement("input", { type: "text", name: "name-input", placeholder: "name", required: true }),
+	    _react2.default.createElement(
+	      "label",
+	      { htmlFor: "email-input" },
+	      "Email"
+	    ),
+	    _react2.default.createElement("input", { type: "email", name: "email-input", placeholder: "email", required: true }),
+	    _react2.default.createElement(
+	      "label",
+	      { htmlFor: "textarea" },
+	      "Message"
+	    ),
+	    _react2.default.createElement("textarea", { name: "textarea", rows: "5", placeholder: "message", required: true }),
+	    _react2.default.createElement(
+	      "button",
+	      { className: "btn btn-submit btn-small" },
+	      "Submit"
 	    )
 	  );
 	};

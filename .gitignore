@@ -4,4 +4,4 @@ node_modules
 typings
 .settings
 .idea
-dist/bundle*
+static/bundle*
