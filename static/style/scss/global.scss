@@ -1,0 +1,39 @@
+/******* Global Styles **************/
+.wrapper {
+  width:1440px;
+  max-width: 90%;
+  margin:0 auto;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  border-radius:2rem;
+  padding: .5rem 2rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.btn-secondary {
+  background: $btn-secondary;
+}
+.btn-small {
+  font-size: .9rem;
+}
+.teal {
+  background: $insta;
+}
+.purple {
+  background: $fb-shop;
+}
+.pink {
+  background: $submit;
+}
+
+hr {
+  height: .2rem;
+  border: none;
+  outline: none;
+  border-radius: .4rem;
+}

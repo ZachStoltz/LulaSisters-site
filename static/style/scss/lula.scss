@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'global';
+@import 'header';
+@import 'about';
+@import 'footer';
+@import 'about-lularoe';
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+
+/*********** App Container ***********/
+.app-container {
+  display: flex;
+  flex-direction: column;
+}

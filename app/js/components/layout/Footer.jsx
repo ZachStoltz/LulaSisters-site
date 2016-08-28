@@ -4,18 +4,21 @@ import React from 'react';
 
 export default () => (
   <footer>
-    <div className="wrapper footer-content">
-      <div className="insta-feed">
+    <div className="wrapper">
+      {/* <div className="insta-feed">
         PHOTOS FROM INSTAGRAM
-      </div>
-      <div>
+      </div> */}
+      <div className="content">
         <h4>Getting Started</h4>
         <ul>
           <a><li>How to shop</li></a>
           <a><li>How to shop</li></a>
+          <a><li>How to shop</li></a>
+          <a><li>How to shop</li></a>
+          <a><li>FAQ</li></a>
         </ul>
       </div>
-      <div>
+      <div className="content">
         <h4>Wanna Talk?</h4>
         <p>
           Pug synth paleo vinyl messenger bag,
@@ -35,9 +38,9 @@ export default () => (
           <a href="#">LuLaSisters: Dicia & Erica</a>
         </div>
       </div>
-      <EmailForm className="email-form" />
+      <EmailForm className="content email-form" />
     </div>
-    <div className="wrapper">
+    <div className="wrapper copy">
       <hr />
       <div className="copy">
         <span>&copy; Two and a Half Girls, LLC</span>

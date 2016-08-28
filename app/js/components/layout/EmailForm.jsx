@@ -16,7 +16,7 @@ export default (props) => (
         <label htmlFor="textarea">message:</label>
         <textarea name="textarea" rows="5" placeholder="message" required />
       </div>
-      <button className="btn btn-submit btn-small">Submit</button>
+      <button className="btn pink btn-small">Submit</button>
     </form>
   </div>
 );

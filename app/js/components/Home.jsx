@@ -20,10 +20,10 @@ export default (props) => (
             seitan flannel selvage fap.
           </p>
           <div className="social-media">
-            <a className="btn fb-shop">
+            <a className="btn purple">
               <span>Shop Our Online Pop-up Mondays @ 8pm EST</span>
             </a>
-            <a className="btn insta">
+            <a className="btn teal">
               <span>Follow Us on Instagram</span>
             </a>
           </div>

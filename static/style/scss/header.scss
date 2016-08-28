@@ -1,0 +1,51 @@
+/************ Header Container *********/
+#banner {
+  background: url("/static/style/img/banner.jpg"); /* Old browsers */
+  background: -moz-linear-gradient(left,  #9a7a43 0%, #985464 26%, #905080 44%, #905080 44%, #5d668f 69%, #477d88 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #9a7a43 0%,#985464 26%,#905080 44%,#905080 44%,#5d668f 69%,#477d88 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #9a7a43 0%,#985464 26%,#905080 44%,#905080 44%,#5d668f 69%,#477d88 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 0 10rem;
+    transition: padding 250ms ease-in-out;
+
+    .logo {
+      height: 100%;
+      transition: width 250ms ease-in-out;
+    }
+    nav {
+      padding: 2rem 0;
+      & > a:not(.btn) {
+        text-decoration: none;
+        color: $white;
+        font-size: .9rem;
+        margin-right: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 974px) {
+  #banner {
+    header {
+      padding: 1rem 0;
+      transition: padding 250ms ease-in-out;
+      .logo {
+        width: 80%;
+        transition: width 250ms ease-in-out;
+      }
+
+      nav {
+        padding: 1.3rem 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 908px) {
+  nav {
+    display: none;
+  }
+}

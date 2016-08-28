@@ -18,7 +18,7 @@ app.engine('hbs', hbs({ defaultLayout: 'main', extname: '.hbs' }));
 app.set('view engine', 'hbs');
 
 app.use('/static', serveStatic(path.join(__dirname, '/static')));
-app.use(favicon(`${__dirname}/static/style/favicon.ico`));
+app.use(favicon(`${__dirname}/static/style/img/favicon.ico`));
 
 app.use((req, res) => {
   match({ routes: routes(), location: req.url }, (error, redirectLocation, renderProps) => {

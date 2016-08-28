@@ -1,0 +1,141 @@
+/*********** Footer Section **************/
+footer {
+  background: $footer-background;
+
+  & .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 1rem;
+
+    .content:nth-child(2) {
+      margin: 0 1rem 0;
+    }
+    @media (max-width: 992px) {
+      .content:nth-child(2) {
+        flex: 1 1 50%;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 25%;
+
+      & > h4 {
+        margin: 0;
+      }
+
+      & > ul {
+        list-style: none;
+        margin: 0;
+        padding:.5rem;
+      }
+
+      & .fa {
+        text-align: center;
+        font-size: 1.3rem;
+        width: 10%;
+        background: $grey-background;
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+      }
+
+      & > .email,
+      & > .fb {
+        display: flex;
+        margin-bottom: .2rem;
+
+        & a, & .fa {
+          padding: .3rem;
+          border: none;
+          outline: none;
+        }
+
+        & a {
+          border-top-right-radius: .5rem;
+          border-bottom-right-radius: .5rem;
+          background: $submit;
+          width: 90%;
+          font-weight: 300;
+          overflow:hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+
+    .content.email-form {
+      form {
+        display: flex;
+        flex-direction: column;
+
+        input, textarea {
+          margin: .3rem 0;
+          padding: .4rem;
+          border: none;
+          outline: none;
+          border-radius: .3rem;
+        }
+
+        & .input-group {
+          display: flex;
+          flex-direction: row;
+          margin: .3rem 0;
+
+          label {
+            width: 20%;
+            border:none;
+            outline:none;
+            padding: .3rem;
+            font-weight: 300;
+            border-top-left-radius: .3rem;
+            border-bottom-left-radius: .3rem;
+            background: $insta;
+            color: #47475f;
+          }
+          input {
+            margin: 0;
+            width: 85%;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: .3rem;
+            border-bottom-right-radius: .3rem;
+          }
+        }
+        & .input-group.textarea {
+          flex-direction: column;
+
+          label {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-top-left-radius: .3rem;
+            border-top-right-radius: .3rem;
+            width: 100%;
+          }
+          textarea {
+            margin: 0;
+            width: 100%;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: .3rem;
+            border-bottom-right-radius: .3rem;
+          }
+        }
+        textarea {
+          resize: none;
+        }
+      }
+    }
+    &.copy {
+      display: block;
+      padding-top: 0;
+    }
+  }
+  .copy {
+    padding: .3rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+}
