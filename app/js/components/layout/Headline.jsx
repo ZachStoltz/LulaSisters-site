@@ -10,13 +10,15 @@ export default () => (
         </Link>
         <nav>
           <Link to="about-lularoe">
-            About LuLaRoe
+            <span>About LuLaRoe</span>
           </Link>
           <Link to="team-lula-sisters">
-            Team LuLa Sisters
+            <span>Team LuLa Sisters</span>
+            <i className="fa fa-chevron-down" aria-hidden="true" />
           </Link>
           <Link to="for-customers">
-            For Customers
+            <span>For Customers</span>
+            <i className="fa fa-chevron-down" aria-hidden="true" />
           </Link>
           <Link to="join-our-team" className="btn btn-small btn-secondary">
             Join Our Team

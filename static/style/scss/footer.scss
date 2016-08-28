@@ -128,10 +128,11 @@ footer {
     &.copy {
       display: block;
       padding-top: 0;
+
+      hr {
+        background: $grey-background;
+      }
     }
-  }
-  .copy {
-    padding: .3rem;
   }
 
   a {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default (props) => (
+export default () => (
   <section id="about-lularoe">
     <div className="wrapper">
       <div className="content">
