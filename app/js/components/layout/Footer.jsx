@@ -9,7 +9,7 @@ export default () => (
         PHOTOS FROM INSTAGRAM
       </div> */}
       <div className="content">
-        <h4>Getting Started</h4>
+        <h5>Getting Started</h5>
         <ul>
           <a><li>How to shop</li></a>
           <a><li>How to shop</li></a>
@@ -19,7 +19,7 @@ export default () => (
         </ul>
       </div>
       <div className="content">
-        <h4>Wanna Talk?</h4>
+        <h5>Wanna Talk?</h5>
         <p>
           Pug synth paleo vinyl messenger bag,
           heirloom gochujang retro vice meggings

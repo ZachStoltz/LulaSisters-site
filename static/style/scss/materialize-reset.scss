@@ -1,0 +1,23 @@
+nav {
+  background-color: transparent;
+  line-height: normal;
+  width:auto;
+}
+
+.btn {
+  height: auto;
+  line-height: normal;
+}
+
+input[type=text],
+input[type=email] {
+  height: auto;
+  background-color: $white;
+}
+label {
+  font-size: inherit;
+}
+textarea {
+  height:auto;
+  background-color: $white;
+}

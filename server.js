@@ -13,6 +13,7 @@ const ClientApp = require('./app/js/components/App.jsx').default;
 const routes = ClientApp.routes;
 
 const app = express();
+
 app.use(compression());
 app.engine('hbs', hbs({ defaultLayout: 'main', extname: '.hbs' }));
 app.set('view engine', 'hbs');

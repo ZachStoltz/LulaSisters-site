@@ -2,7 +2,7 @@ import React from 'react';
 
 export default (props) => (
   <div className={props.className}>
-    <h4>Quick Response to Dicia & Erica</h4>
+    <h5>Quick Response to Dicia & Erica</h5>
     <form>
       <div className="input-group">
         <label htmlFor="name-input">name:</label>

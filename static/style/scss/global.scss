@@ -17,6 +17,11 @@ html {
   text-decoration: none;
   color: white;
   text-align: center;
+  user-select: none;
+
+  &:hover {
+    background-color: $submit;
+  }
 }
 .btn-secondary {
   background: $btn-secondary;
@@ -25,13 +30,13 @@ html {
   font-size: .9rem;
 }
 .teal {
-  background: $insta;
+  background: $insta !important;
 }
 .purple {
-  background: $fb-shop;
+  background: $fb-shop !important;
 }
 .pink {
-  background: $submit;
+  background: $submit !important;
 }
 
 hr {

@@ -11,7 +11,7 @@
     padding: 2rem;
     display: flex;
     flex-direction: row;
-    transition: margin width 250ms ease-in-out;
+    transition: margin 250ms ease-in-out, width 250ms ease-in-out;
 
     .img-container,
     .bio {

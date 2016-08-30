@@ -20,12 +20,13 @@ const myRoutes = () => (
   </Route>
 );
 
+
 const App = () => (
   // <Provider store={store}>
   <Router history={browserHistory}>
     {myRoutes()}
   </Router>
-  // </Provider>
+  // </Provider
 );
 
 App.routes = myRoutes;
