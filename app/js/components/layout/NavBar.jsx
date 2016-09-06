@@ -1,48 +1,54 @@
 import Divider from '../common/Divider.jsx';
 import Dropdown from '../common/Dropdown.jsx';
 import { Link } from 'react-router';
+import React from 'react';
 import SideNav from '../common/SideNav.jsx';
-import React, { Component } from 'react';
 
-export default class NavBar extends Component {
-  render() {
-    return (
-      <nav>
-        <SideNav
-          id="side-nav"
-          className="button-collapse"
-        />
-        <Link to="about-lularoe" className="nav-item">
-          <span>About LuLaRoe</span>
+export default () => (
+  <nav>
+    <SideNav
+      id="side-nav"
+      className="button-collapse"
+    />
+    <Dropdown
+      id="about-dropdown"
+      beloworigin
+      alignment="right"
+      className="nav-item"
+      title="About LuLaRoe"
+    >
+      <li>
+        <Link to="about-lularoe">
+          About LuLaRoe
         </Link>
-        <Dropdown
-          id="team-dropdown"
-          beloworigin
-          alignment="right"
-          className="nav-item"
-          title="Team LuLa Sisters"
-        >
-          <li><Link to="team-lula-sisters">Check Out Our Team Members</Link></li>
-          <li><a href="#!">two</a></li>
-          <Divider />
-          <li><a href="#!">three</a></li>
-        </Dropdown>
-        <Dropdown
-          id="for-customers"
-          className="nav-item"
-          alignment="right"
-          beloworigin
-          title="For Customers"
-        >
-          <li><Link to="for-customers">For Customers</Link></li>
-          <li><a href="#!">two</a></li>
-          <Divider />
-          <li><a href="#!">three</a></li>
-        </Dropdown>
-        <Link to="join-our-team" className="btn btn-small btn-secondary">
-          Join Our Team
+      </li>
+      <Divider />
+      {/* <li>
+        <Link to="clothes">
+          The Clothes
         </Link>
-      </nav>
-    );
-  }
-}
+      </li>
+      <Divider /> */}
+      <li>
+        <Link to="frequently-asked">
+          FAQ
+        </Link>
+      </li>
+    </Dropdown>
+    <Dropdown
+      id="shop"
+      className="nav-item"
+      alignment="right"
+      beloworigin
+      title="Shop"
+    >
+      <li><a href="https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/">Shop Our FB Page</a></li>
+      <Divider />
+      <li><Link to="events">Host/Shop A Popup!</Link></li>
+    </Dropdown>
+    <Link to="team-lula-sisterhood" className="nav-item">Team LuLa Sisterhood</Link>
+    <Link to="join-our-team" className="btn btn-small btn-secondary">
+      Join Our Team
+    </Link>
+  </nav>
+);

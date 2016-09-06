@@ -2,10 +2,61 @@
 html {
   background: $fb-shop;
 }
+section:not(#banner) {
+  background: $grey-background;
+}
+.cursive {
+  font-family: 'Sofia', cursive;
+}
 .wrapper {
   width:1440px;
   max-width: 90%;
   margin:0 auto;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+
+  h1 {
+    text-align: center;
+    font-size:2.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 0;
+  }
+
+  & .fa {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  & > .email,
+  & > .facebook,
+  & > .instagram {
+    display: flex;
+    margin-bottom: .2rem;
+    justify-content: center;
+
+    & a {
+      padding: .3rem;
+      border: none;
+      outline: none;
+      border-radius: .5rem;
+      background: $submit;
+      width: 80%;
+      font-weight: 300;
+      overflow:hidden;
+      text-overflow: ellipsis;
+
+      .fa {
+        padding: .3rem;
+        margin: 0 .5rem;
+      }
+    }
+  }
 }
 
 .btn {

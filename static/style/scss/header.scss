@@ -11,12 +11,21 @@
     padding: 2rem 0 10rem;
     transition: padding 250ms ease-in-out;
 
-    .logo {
-      height: 100%;
-      transition: width 250ms ease-in-out;
-    }
-    .logo-small {
-      display:none;
+    .brand {
+      .logo {
+        height: 100%;
+        transition: width 250ms ease-in-out;
+      }
+      .logo-small {
+        display:none;
+      }
+      span {
+        color: $white;
+        font-size: 1.5rem;
+        margin-left: -8.5rem;
+        margin-top: 5.5rem;
+        position: absolute;
+      }
     }
     nav {
       padding: 2rem 0;
@@ -38,10 +47,10 @@
 @media (max-width: 920px) {
   #banner {
     header {
-      .logo {
+      .brand > .logo {
         display: none;
       }
-      .logo-small {
+      .brand > .logo-small {
         display: inline-block;
       }
     }
@@ -59,7 +68,7 @@
     header {
       padding: 1rem 0;
       transition: padding 250ms ease-in-out;
-      .logo {
+      .brand > .logo {
         width: 80%;
         transition: width 250ms ease-in-out;
       }

@@ -1,5 +1,7 @@
-import AboutLula from './about-lula/AboutLula.jsx';
-import CustomerInfo from './info/CustomerInfo.jsx';
+import AboutLula from './about/AboutLula.jsx';
+import ClothesContainer from './about/ClothesContainer.jsx';
+import EventsContainer from './events/EventsContainer.jsx';
+import FAQContainer from './about/FAQContainer.jsx';
 import Home from './Home.jsx';
 import JoinOurTeam from './join-our-team/JoinOurTeam.jsx';
 import Layout from './layout/Layout.jsx';
@@ -14,8 +16,10 @@ const myRoutes = () => (
   <Route path="/" component={Layout}>
     <IndexRoute component={Home} />
     <Route path="about-lularoe" component={AboutLula} />
-    <Route path="team-lula-sisters" component={Team} />
-    <Route path="for-customers" component={CustomerInfo} />
+    {/* <Route path="clothes" component={ClothesContainer} /> */}
+    <Route path="frequently-asked" component={FAQContainer} />
+    <Route path="events" component={EventsContainer} />
+    <Route path="team-lula-sisterhood" component={Team} />
     <Route path="join-our-team" component={JoinOurTeam} />
   </Route>
 );

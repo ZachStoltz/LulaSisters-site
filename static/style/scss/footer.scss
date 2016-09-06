@@ -21,6 +21,10 @@ footer {
       flex-direction: column;
       flex: 1 1 25%;
 
+      p {
+        padding: 0;
+      }
+
       & > h5 {
         margin: 0;
       }
@@ -29,37 +33,6 @@ footer {
         list-style: none;
         margin: 0;
         padding:.5rem;
-      }
-
-      & .fa {
-        text-align: center;
-        font-size: 1.3rem;
-        width: 10%;
-        background: $grey-background;
-        border-top-left-radius: .5rem;
-        border-bottom-left-radius: .5rem;
-      }
-
-      & > .email,
-      & > .fb {
-        display: flex;
-        margin-bottom: .2rem;
-
-        & a, & .fa {
-          padding: .3rem;
-          border: none;
-          outline: none;
-        }
-
-        & a {
-          border-top-right-radius: .5rem;
-          border-bottom-right-radius: .5rem;
-          background: $submit;
-          width: 90%;
-          font-weight: 300;
-          overflow:hidden;
-          text-overflow: ellipsis;
-        }
       }
     }
 

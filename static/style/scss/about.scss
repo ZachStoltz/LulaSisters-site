@@ -17,12 +17,22 @@
     .bio {
       width: 50%;
     }
+    .img-container {
+      margin-right: 1rem;
+
+      img {
+        width:100%;
+        border-radius: 1rem;
+      }
+    }
     .bio {
       flex-direction: column;
+      p > strong {
+        font-size: 1.8rem; 
+      }
       & > h3 {
         text-align: center;
-        font-family: cursive;
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin: 0 0 .3rem 0;
       }
       & .social-media {

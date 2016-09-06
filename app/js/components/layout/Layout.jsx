@@ -4,7 +4,7 @@ import React from 'react';
 
 const Layout = (props) => (
   <div className="app-container">
-    <Headline />
+    <Headline path={props.routes[1].path} />
     {props.children}
     <Footer />
   </div>
