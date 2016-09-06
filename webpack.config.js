@@ -15,6 +15,7 @@ let plugins = [
 
 ];
 let extractCSS = undefined;
+let styleLoader = undefined;
 
 const entry = ['babel-polyfill', './app/index'];
 
@@ -24,6 +25,16 @@ if (process.env.NODE_ENV === 'production') {
     minimize: true,
     compress: { warnings: false },
   }), extractCSS].concat(plugins);
+
+  styleLoader = {
+    test: /\.scss$/,
+    loader: extractCSS.extract(['css', 'sass']),
+  };
+} else {
+  styleLoader = {
+    test: /\.scss$/,
+    loaders: ['style', 'css', 'sass'],
+  };
 }
 module.exports = {
   devtool: 'source-map',
@@ -39,11 +50,9 @@ module.exports = {
       test: /\.jsx?$/,
       loader: 'babel',
       exclude: /node_modules/,
-    }, {
-      test: /\.scss$/,
-      loaders: process.env.NODE_ENV === 'production' ? extractCSS.extract(['css', 'sass'])
-        : ['style', 'css', 'sass'],
-    }],
+    },
+      styleLoader,
+    ],
     resolve: {
       extensions: ['', '.js', '.jsx'],
     },
