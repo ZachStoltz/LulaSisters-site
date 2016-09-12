@@ -1,0 +1,10 @@
+nav .side-nav-toggle {
+  display:none;
+  transition: display 250ms ease-in-out;
+}
+@media only screen and (max-width: 695px){
+  nav .side-nav-toggle {
+    display: block;
+    transition: display 250ms ease-in-out;
+  }
+}

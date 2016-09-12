@@ -10,13 +10,13 @@ export default class SideNav extends Component {
   }
   render() {
     return (
-      <span>
+      <span className="side-nav-toggle">
         <a
           href="#"
           data-activates={this.props.id}
           className={this.props.className}
         >
-          <i className="material-icons">menu</i>
+          <i className="fa fa-bars"></i>
         </a>
         <ul className="side-nav" id={this.props.id}>
           <li>Need to add items</li>

@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 
 export const FAQ = (props) => (
-  <div className="faq--item">
+  <div className="faq--item container">
     <div className="faq--question">
       {props.question}
     </div>

@@ -23,8 +23,8 @@ export default () => (
         <h5>Wanna Talk?</h5>
         <MediaLink
           type="email"
-          href="mailto:erica@stoltz.io?cc=dicia@marguccio.com&amp;subject=Heyo%20Lets%20talk%20Lularoe"
-          name="lulasistersdiciaanderica@gmail.com"
+          href="mailto:LuLaSistersDiciaErica@gmail.com&amp;subject=Heyo%20Lets%20talk%20Lularoe"
+          name="LuLaSistersDiciaErica@gmail.com"
         />
         <MediaLink
           type="facebook"
