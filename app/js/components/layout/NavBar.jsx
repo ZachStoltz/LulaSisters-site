@@ -47,7 +47,7 @@ export default () => (
         <Divider />
         <li><Link to="events">Host/Shop A Popup!</Link></li>
       </Dropdown>
-      <Link to="team-lula-sisterhood" className="nav-item">Team LuLa Sisterhood</Link>
+      <Link to="team-lula-queens" className="nav-item">Team LuLa Queens</Link>
       <Link to="join-our-team" className="btn btn-small btn-secondary">
         Join Our Team
       </Link>

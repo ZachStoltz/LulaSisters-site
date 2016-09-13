@@ -19,7 +19,7 @@ const myRoutes = () => (
     {/* <Route path="clothes" component={ClothesContainer} /> */}
     <Route path="frequently-asked" component={FAQContainer} />
     <Route path="events" component={EventsContainer} />
-    <Route path="team-lula-sisterhood" component={Team} />
+    <Route path="team-lula-queens" component={Team} />
     <Route path="join-our-team" component={JoinOurTeam} />
   </Route>
 );

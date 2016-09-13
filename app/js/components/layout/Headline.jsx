@@ -12,7 +12,7 @@ export default (props) => (
         <Link to="/" className="brand">
           <img className="logo" src={'/static/style/img/logo.png'} alt="LuLaRoe: Simply Comfortable" />
           <img className="logo-small" src={'/static/style/img/logo_small.png'} alt="LuLaRoe" />
-          <span className="cursive">LuLa Sisterhood</span>
+          <span className="cursive">Team LuLa Queens</span>
         </Link>
         <NavBar />
       </header>
