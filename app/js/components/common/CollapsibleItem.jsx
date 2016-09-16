@@ -6,7 +6,7 @@ export default (props) => (
       {props.header}
     </div>
     <div className="collapsible-body">
-      <p>{props.body}</p>
+      {props.children || props.body}
     </div>
   </li>
 );

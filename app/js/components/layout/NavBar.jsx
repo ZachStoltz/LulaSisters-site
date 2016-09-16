@@ -24,12 +24,6 @@ export default () => (
           </Link>
         </li>
         <Divider />
-        {/* <li>
-          <Link to="clothes">
-            The Clothes
-          </Link>
-        </li>
-        <Divider /> */}
         <li>
           <Link to="frequently-asked">
             FAQ
@@ -43,7 +37,11 @@ export default () => (
         beloworigin
         title="Shop"
       >
-        <li><a href="https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/">Shop Our FB Page</a></li>
+        <li>
+          <a href="https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/" target="_blank">
+            Shop Our FB Page
+          </a>
+        </li>
         <Divider />
         <li><Link to="events">Host/Shop A Popup!</Link></li>
       </Dropdown>

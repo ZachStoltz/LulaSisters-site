@@ -8,3 +8,19 @@ nav .side-nav-toggle {
     transition: display 250ms ease-in-out;
   }
 }
+
+nav .side-nav {
+  color: black;
+  .divider {
+    margin: 0;
+  }
+  .logo {
+    padding: 2rem;
+
+    a {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

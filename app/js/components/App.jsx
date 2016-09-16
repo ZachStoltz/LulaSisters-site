@@ -1,5 +1,4 @@
 import AboutLula from './about/AboutLula.jsx';
-import ClothesContainer from './about/ClothesContainer.jsx';
 import EventsContainer from './events/EventsContainer.jsx';
 import FAQContainer from './about/FAQContainer.jsx';
 import Home from './Home.jsx';
@@ -16,7 +15,6 @@ const myRoutes = () => (
   <Route path="/" component={Layout}>
     <IndexRoute component={Home} />
     <Route path="about-lularoe" component={AboutLula} />
-    {/* <Route path="clothes" component={ClothesContainer} /> */}
     <Route path="frequently-asked" component={FAQContainer} />
     <Route path="events" component={EventsContainer} />
     <Route path="team-lula-queens" component={Team} />
