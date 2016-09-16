@@ -17,7 +17,7 @@ export default () => (
            snackwave iceland kitsch organic franzen migas
            locavore venmo.
         </p>
-        <Collapsible collapsible="accordion" popout>
+        <Collapsible type="accordion" popout>
           <CollapsibleItem
             header="Template Header for Collapsible"
             body="BLAH BLAH BLAH BLAH BLAH"
