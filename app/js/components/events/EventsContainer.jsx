@@ -31,7 +31,7 @@ export class EventsContainer extends Component {
     }
     return events.map(ev => {
       return (
-        <div>
+        <div key={ev.id}>
           <h5>{ev.host}</h5>
           <div>{ev.location}</div>
           <div>{ev.time}</div>

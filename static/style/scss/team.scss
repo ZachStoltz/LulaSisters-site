@@ -8,7 +8,7 @@ section#team {
     justify-content: space-around;
     flex-wrap: wrap;
     .member {
-      flex: 1;
+      flex: 1 1  auto;
       margin: 1rem;
 
       img {

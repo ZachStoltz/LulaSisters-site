@@ -11,12 +11,6 @@ footer {
     .content:nth-child(2) {
       margin: 0 1rem 0;
     }
-    @media (max-width: 992px) {
-      .content:nth-child(2) {
-        flex: 1 1 100%;
-        margin: 0;
-      }
-    }
 
     .content {
       display: flex;

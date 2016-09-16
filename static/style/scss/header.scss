@@ -47,7 +47,11 @@
     }
   }
 }
-
+@media (min-width: 920px) and (max-width: 997px) {
+  #banner header .brand span {
+    margin-top: 4.5rem;
+  }
+}
 @media (max-width: 920px) {
   #banner {
     header {
