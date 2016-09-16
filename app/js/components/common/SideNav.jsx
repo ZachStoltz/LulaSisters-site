@@ -1,7 +1,7 @@
 import Collapsible from './Collapsible.jsx';
 import CollapsibleItem from './CollapsibleItem.jsx';
 import Divider from './Divider.jsx';
-import Link from 'react-router/lib/link';
+import Link from 'react-router/lib/Link';
 import { unmountComponentAtNode } from 'react-dom';
 import React, { Component, PropTypes } from 'react';
 
