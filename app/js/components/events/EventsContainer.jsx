@@ -34,7 +34,9 @@ export class EventsContainer extends Component {
         <div key={ev.id}>
           <h5>{ev.host}</h5>
           <div>{ev.location}</div>
+          <div>{ev.date}</div>
           <div>{ev.time}</div>
+          <div>{ev.comments}</div>
         </div>
       );
     });
@@ -46,28 +48,29 @@ export class EventsContainer extends Component {
       <section id="events">
         <div className="wrapper">
           <div className="content">
-            <h1>
-              Host/Shop A Popup!
-            </h1>
-            <button className="btn">Book A Popup</button>
-            <h3>Currently Booked Events</h3>
+            <div className="call-to-action">
+              <a
+                target="_blank"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScYFj1OYwwfvcDbdXknPxb4G0A6oEXdlxNgGgYqEeEDa67Ieg/viewform?usp=send_form"
+              >
+                <img src="/static/style/img/schedule-a-pop-up.jpeg" />
+              </a>
+              <div className="wrapper">
+                <a
+                  className="btn"
+                  target="_blank"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScYFj1OYwwfvcDbdXknPxb4G0A6oEXdlxNgGgYqEeEDa67Ieg/viewform?usp=send_form"
+                >
+                  Schedule Now!
+                </a>
+              </div>
+            </div>
+
+            <h3>Upcoming Events</h3>
             {isFetching
               ? <Loader />
               : this.renderEvents(events)
             }
-            <p>
-              PBR&B mustache pitchfork literally polaroid,
-              echo park street art retro chartreuse portland.
-              Disrupt microdosing cold-pressed, cornhole kitsch
-              blog pop-up cronut. +1 banjo vegan meggings slow-carb,
-              stumptown selfies DIY poutine. Blog shabby chic farm-to-table,
-              cliche everyday carry meh offal yr you probably haven't heard
-              of them humblebrag ugh swag. Austin flexitarian raw denim
-              organic direct trade, vice salvia. Vegan lumbersexual brunch,
-              biodiesel tumblr truffaut microdosing tousled paleo. Franzen
-              everyday carry pitchfork four loko.
-            </p>
-
             <div className="calendar-wrapper">
 
             </div>

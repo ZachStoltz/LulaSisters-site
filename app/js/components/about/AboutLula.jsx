@@ -5,6 +5,7 @@ export default () => (
     <div className="wrapper">
       <div className="content">
         <img src="/static/style/img/lularoe-quote.png" alt="What is LuLaRoe?" />
+        <h2>About LuLaRoe</h2>
         <p>
           LuLaRoe offers budget-friendly, comfortable, fashion-forward
           clothing in all sizes and for all body types. LuLaroe offers

@@ -3,42 +3,15 @@ import Member from '../common/Member.jsx';
 import React, { Component } from 'react';
 
 const buildMemberComponents = (members) => {
+  if (Array.isArray(members) && members.length === 0) {
+    return (
+      <h4>
+        Members Info Coming Soon!!
+      </h4>
+    );
+  }
   return members.map(member => <Member key={member.name} {...member} />);
 };
-
-const testMembers = [{
-  name: 'Test User',
-  location: 'Mountain View, CA',
-  info: [{
-    type: 'facebook',
-    href: '#',
-    name: 'TestUser FB',
-  }],
-},{
-  name: 'Test User 2',
-  location: 'Mountain View, CA',
-  info: [{
-    type: 'facebook',
-    href: '#',
-    name: 'TestUser FB',
-  }],
-},{
-  name: 'Test User 3',
-  location: 'Mountain View, CA',
-  info: [{
-    type: 'facebook',
-    href: '#',
-    name: 'TestUser FB',
-  }],
-},{
-  name: 'Test User 4',
-  location: 'Mountain View, CA',
-  info: [{
-    type: 'facebook',
-    href: '#',
-    name: 'TestUser FB',
-  }],
-}];
 
 export default class Team extends Component {
   constructor() {
@@ -48,7 +21,7 @@ export default class Team extends Component {
   }
 
   componentDidMount() {
-    this.setState({ members: testMembers }); //eslint-disable-line
+    this.setState({ members: [] }); //eslint-disable-line
   }
   render() {
     return (
@@ -57,9 +30,9 @@ export default class Team extends Component {
           <div className="content">
             <h1>Our Wonderful Team Members!</h1>
             <div className="members">
-              {!this.state.members //eslint-disable-line
+              {!this.state.members
                 ? <Loader />
-                : buildMemberComponents(this.state.members) //eslint-disable-line
+                : buildMemberComponents(this.state.members)
               }
             </div>
           </div>

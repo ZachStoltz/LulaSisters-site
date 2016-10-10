@@ -6,6 +6,14 @@ section#faq {
   }
   .faq--item {
     margin-bottom: 1.5rem;
+
+    .faq--img {
+      text-align: center;
+      img {
+        width: 85%;
+        border-radius: 1.4rem;
+      }
+    }
   }
   .faq--question,
   .faq--answer {
@@ -43,7 +51,7 @@ section#faq {
     }
   }
   .signature {
-    margin-top: 1rem;
+    margin: 1rem auto;
     .cursive {
       font-size: 1.5rem;
     }

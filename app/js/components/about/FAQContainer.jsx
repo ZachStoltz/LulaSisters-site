@@ -6,7 +6,7 @@ export default () => (
   <section id="faq">
     <div className="wrapper">
       <div>
-        <h3>Frequently Asked Questions</h3>
+        <h2>Frequently Asked Questions</h2>
         <p className="container">
           Are you thinking about joining the wonderful world
           of LuLaRoe consulting? Below are some of the most
@@ -29,7 +29,10 @@ export default () => (
       <FAQ
         question='Where does the name "LuLaRoe" come from?'
         answer="The founder’s granddaughters; Lucy, Lola, and Monroe."
-      />
+      >
+        <img src="/static/style/img/granddaughters.jpeg" alt="LuLaRoe's granddaughters" />
+      </FAQ>
+
       <FAQ
         question="How do you pronounce LuLaRoe?"
         answer="Loo-Luh-Row"
@@ -41,7 +44,9 @@ export default () => (
       <FAQ
         question="Who founded LuLaRoe?"
         answer="Mark and Deanne Stidham (a truly inspiring and GIVING couple!)"
-      />
+      >
+        <img src="/static/style/img/founders.jpg" alt="LuLaRoe's founders" />
+      </FAQ>
       <FAQ
         question="What is LuLaRoe clothing comparable to?"
         answer="LuLaRoe is comparable to Anthropology"
@@ -49,7 +54,9 @@ export default () => (
       <FAQ
         question="What types of clothing are available?"
         answer="All types! Dresses, skirts, leggings, tunics, tops, you name it! All items have varying sleeve lengths, dress/skirt lengths, fabrics and prints. There is definitely something for everyone. Sizes run from size 2 in kids to 3X in adults."
-      />
+      >
+        <img style={{ width: '100%' }} src="/static/style/img/lulagroup.jpg" alt="LuLaRoe clothing types" />
+      </FAQ>
       <FAQ
         question="Why do the clothes have names of people?"
         answer="It’s great isn’t it? The owners of LuLaRoe value their relationships and each item is named in honor of someone significant in their lives, whether it is a family member or a crucial person within the company. The LuLaRoe naming technique also makes identifying styles easy and fun, while giving the items personality."
@@ -57,7 +64,9 @@ export default () => (
       <FAQ
         question="What makes LuLaRoe clothing so special?"
         answer="Each item is made in very limited quantities, only 5,000 of a certain print is made across multiple styles and distributed throughout the US between all consultants. What you see today will not be available tomorrow. LuLaRoe designs their own prints and fabrics, which cannot be found elsewhere. The clothing is also designed to be comfortable and flattering on all body types."
-      />
+      >
+        <img src="/static/style/img/unique-lularoe.jpg" alt="What Makes LuLaRoe Special" />
+      </FAQ>
       <FAQ
         question="Where is LuLaRoe Clothing manufactured?"
         answer="Initially, all clothing was made in the U.S.A. However, due to a rapid increase in demand, international fair-wage factories were also incorporated."
@@ -74,8 +83,8 @@ export default () => (
         answer="Absolutely NOT! There are never any costs or fees to being a LuLaRoe consultant. The only thing you are paying for is the clothing. You buy it at wholesale to sell at retail. In order to remain a consultant, you must purchase a total of 33 items from LuLaRoe per month – which is very easy to accomplish! You can sell 33 pieces at just one pop up!"
       />
       <FAQ
-        question="How do I signup for LuLaRoe:"
-        answer="First, fill out this link: https://mylularoe.com/join/LuLaSistersDiciaErica Then you will open an Onboarding ticket at support.lularoe.com. We, of course, will help you with everything you need. We have an entire toolkit ready to help you every step of the way!"
+        question="How do I signup for LuLaRoe?"
+        answer={`First, fill out this link: ${<a href="https://mylularoe.com/join/LuLaSistersDiciaErica">LuLaSistersDiciaErica</a>} Then you will open an Onboarding ticket at support.lularoe.com. We, of course, will help you with everything you need. We have an entire toolkit ready to help you every step of the way!`}
       />
       <FAQ
         question="What if I decide LuLaRoe isn’t for me? Can I quit?"
@@ -88,7 +97,9 @@ export default () => (
       <FAQ
         question="How many LuLaRoe Consultants does the company currently have?"
         answer="Currently there are roughly 25,000 LuLaRoe consultants nationwide. Compared to other direct sales companies, LuLaRoe is just in its youth. The potential for growth is astounding."
-      />
+      >
+        <img src="/static/style/img/consultant.png" alt="LuLaRoe Consultant Count" />
+      </FAQ>
       <FAQ
         question="Do I have to do in-home parties?"
         answer="No. Though you will likely want to. LuLaRoe parties are awesome! You get to hang out with your friends, eat food, and try on great clothes! Also, your friends, neighbors, coworkers and acquaintances will be interested in the clothing. Making the clothing available to them will really boost your sales. You will find that once you throw in-home parties, you will gain regular customers who want to come back and shop for more, even if you are not throwing an official party. They may just stop by one day alone to buy more clothes; this is money in your pocket! Having in-home parties also allows for customers to try new styles, get a feel for the clothes, and get a feel for their sizing so they can buy confidently in your online pop ups."

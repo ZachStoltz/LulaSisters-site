@@ -25,17 +25,19 @@ export default () => (
         <h5>Wanna Talk?</h5>
         <MediaLink
           type="email"
-          href="mailto:LuLaSistersDiciaErica@gmail.com&amp;subject=Heyo%20Lets%20talk%20Lularoe"
+          href="mailto:LuLaSistersDiciaErica@gmail.com"
           name="LuLaSistersDiciaErica@gmail.com"
         />
         <MediaLink
           type="facebook"
           href="https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/"
+          target="_blank"
           name="LuLaSisters: Dicia & Erica"
         />
         <MediaLink
           type="instagram"
           href="https://www.instagram.com/lulasistersdiciaerica/"
+          target="_blank"
           name="LuLaSistersDiciaErica"
         />
       </div>

@@ -1,0 +1,22 @@
+#events > .wrapper > .content {
+  align-items: center;
+}
+
+.call-to-action {
+  text-align: center;
+
+  a {
+    text-align: center;
+    img {
+      width: 85%;
+    }
+  }
+}
+
+.call-to-action > .wrapper {
+  text-align: center;
+
+  .btn {
+    width: 20rem;
+  }
+}

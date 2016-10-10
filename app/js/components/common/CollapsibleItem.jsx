@@ -5,7 +5,10 @@ export default (props) => (
     <div className="collapsible-header">
       {props.header}
     </div>
-    <div className="collapsible-body">
+    <div
+      className="collapsible-body"
+      style={{ background: 'white', padding: '.5rem' }}
+    >
       {props.children || props.body}
     </div>
   </li>

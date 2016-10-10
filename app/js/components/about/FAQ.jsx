@@ -8,14 +8,18 @@ export const FAQ = (props) => (
     <div className="faq--answer">
       {props.answer}
     </div>
+    <div className="faq--img">
+      {props.children}
+    </div>
   </div>
 );
 
-const { string } = PropTypes;
+const { string, element } = PropTypes;
 
 FAQ.propTypes = {
   question: string,
   answer: string,
+  children: element,
 };
 
 export default FAQ;

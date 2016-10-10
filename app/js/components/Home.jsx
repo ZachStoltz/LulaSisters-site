@@ -23,7 +23,7 @@ export default () => (
           </p>
           <p>
             If you would like to shop, check out our
-            <a href="https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/"> Facebook shopping page. </a>
+            <a href="https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/" target="_blank"> Facebook shopping page. </a>
             If you are interested in learning more
             about LuLaRoe, hosting a pop up party, or how to become a
             consultant & join our team, click around for more info! We
@@ -32,10 +32,10 @@ export default () => (
           </p>
           <p><strong className="cursive"> &#60;3 Dicia & Erica</strong></p>
           <div className="social-media">
-            <a className="btn purple" href="https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/">
+            <a className="btn purple" target="_blank" href="https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/">
               <span>Shop Our Online Pop-up Mondays @ 8pm EST</span>
             </a>
-            <a className="btn teal" href="https://www.instagram.com/lulasistersdiciaerica/">
+            <a className="btn teal" target="_blank" href="https://www.instagram.com/lulasistersdiciaerica/">
               <span>Follow Us on Instagram</span>
             </a>
           </div>
