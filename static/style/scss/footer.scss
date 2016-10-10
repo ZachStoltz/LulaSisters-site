@@ -42,73 +42,13 @@ footer {
       }
     }
 
-    .content.email-form {
+    .content.instagram {
       @media (max-width: 768px) {
         flex: 1 1 100%;
       }
-      @media (min-width: 1024px) {
-        flex: 1 1 30%;
-      }
-      form {
-        display: flex;
-        flex-direction: column;
-
-        input, textarea {
-          margin: .3rem 0;
-          padding: .4rem;
-          border: none;
-          outline: none;
-          border-radius: .3rem;
-        }
-
-        & .input-group {
-          display: flex;
-          flex-direction: row;
-          margin: .3rem 0;
-
-          label {
-            width: 20%;
-            border:none;
-            outline:none;
-            padding: .3rem;
-            font-weight: 300;
-            border-top-left-radius: .3rem;
-            border-bottom-left-radius: .3rem;
-            background: $insta;
-            color: #47475f;
-          }
-          input {
-            margin: 0;
-            width: 85%;
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-            border-top-right-radius: .3rem;
-            border-bottom-right-radius: .3rem;
-          }
-        }
-        & .input-group.textarea {
-          flex-direction: column;
-
-          label {
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
-            border-top-left-radius: .3rem;
-            border-top-right-radius: .3rem;
-            width: 100%;
-          }
-          textarea {
-            margin: 0;
-            width: 100%;
-            border-top-left-radius: 0;
-            border-top-right-radius: 0;
-            border-bottom-left-radius: .3rem;
-            border-bottom-right-radius: .3rem;
-          }
-        }
-        textarea {
-          resize: none;
-        }
-      }
+      // @media (min-width: 1024px) {
+      //   flex: 1 1 30%;
+      // }
     }
     &.copy {
       display: block;

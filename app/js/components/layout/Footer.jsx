@@ -1,4 +1,3 @@
-import EmailForm from './EmailForm.jsx';
 import Link from 'react-router/lib/Link';
 import MediaLink from '../common/MediaLink.jsx';
 import React from 'react';
@@ -26,7 +25,7 @@ export default () => (
         <MediaLink
           type="email"
           href="mailto:LuLaSistersDiciaErica@gmail.com"
-          name="LuLaSistersDiciaErica@gmail.com"
+          name="LuLaSistersDiciaErica"
         />
         <MediaLink
           type="facebook"
@@ -41,7 +40,10 @@ export default () => (
           name="LuLaSistersDiciaErica"
         />
       </div>
-      <EmailForm className="content email-form" />
+      <div className="content instagram">
+        <h5>Instagram Feed</h5>
+        <p style={{ color: 'white' }}>Feature coming soon!</p>
+      </div>
     </div>
     <div className="wrapper copy">
       <hr />
