@@ -10,9 +10,9 @@ export default () => (
         <div className="bio">
           <h3 className="cursive">LuLa Sisters: Dicia & Erica</h3>
           <p>
-            Welcome to the Team LuLa Sisterhood page!
-            We are Dicia Marguccio & Erica Stoltz,
-            the original members of Team LuLa Sisterhood!
+            Welcome to the Team LuLa Queens page!
+            We are Dicia Marguccio & Erica Stoltz of Team LuLaSisters,
+            the original members of Team LuLa Queens!
             We are sister-in-laws who fell in love with LuLaRoe
             as customers & decided to bless others’ lives by
             becoming fashion consultants in June 2016. Dicia lives
