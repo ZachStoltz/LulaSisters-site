@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-pascal-case */
 import FAQ from './FAQ.jsx';
 import React from 'react';
+import ReactGA from 'react-ga';
 
 export default () => (
   <section id="faq">
@@ -84,7 +85,17 @@ export default () => (
       />
       <FAQ
         question="How do I signup for LuLaRoe?"
-        answer={`First, fill out this link: ${<a href="https://mylularoe.com/join/LuLaSistersDiciaErica">LuLaSistersDiciaErica</a>} Then you will open an Onboarding ticket at support.lularoe.com. We, of course, will help you with everything you need. We have an entire toolkit ready to help you every step of the way!`}
+        answer={<p>
+          First, fill out this link:&nbsp;
+          <ReactGA.OutboundLink
+            eventLabel="Join Our Team CTA"
+            to="https://mylularoe.com/join/LuLaSistersDiciaErica"
+            target="_blank"
+          >
+            LuLaSistersDiciaErica&nbsp;
+          </ReactGA.OutboundLink>
+          Then you will open an Onboarding ticket at support.lularoe.com. We, of course, will help you with everything you need. We have an entire toolkit ready to help you every step of the way!
+        </p>}
       />
       <FAQ
         question="What if I decide LuLaRoe isn’t for me? Can I quit?"

@@ -24,17 +24,20 @@ export default () => (
         <h5>Wanna Talk?</h5>
         <MediaLink
           type="email"
+          eventLabel="Email CTA"
           href="mailto:LuLaSistersDiciaErica@gmail.com"
           name="LuLaSistersDiciaErica"
         />
         <MediaLink
           type="facebook"
+          eventLabel="Facebook Group CTA"
           href="https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/"
           target="_blank"
           name="LuLaSisters: Dicia & Erica"
         />
         <MediaLink
           type="instagram"
+          eventLabel="Instagram CTA"
           href="https://www.instagram.com/lulasistersdiciaerica/"
           target="_blank"
           name="LuLaSistersDiciaErica"

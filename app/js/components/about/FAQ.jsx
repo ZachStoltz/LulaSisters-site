@@ -14,11 +14,11 @@ export const FAQ = (props) => (
   </div>
 );
 
-const { string, element } = PropTypes;
+const { string, element, object } = PropTypes;
 
 FAQ.propTypes = {
   question: string,
-  answer: string,
+  answer: PropTypes.oneOfType([string, object]),
   children: element,
 };
 

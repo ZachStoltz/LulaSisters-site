@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 
 export default () => (
   <section id="about">
@@ -23,8 +24,14 @@ export default () => (
           </p>
           <p>
             If you would like to shop, check out our
-            <a href="https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/" target="_blank"> Facebook shopping page. </a>
-            If you are interested in learning more
+            <ReactGA.OutboundLink
+              eventLabel="Facebook Group CTA"
+              to="https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/"
+              target="_blank"
+            >
+              &nbsp;Facebook shopping page.
+            </ReactGA.OutboundLink>
+            &nbsp;If you are interested in learning more
             about LuLaRoe, hosting a pop up party, or how to become a
             consultant & join our team, click around for more info! We
             would love to chat with you and answer all of your questions,
@@ -32,12 +39,22 @@ export default () => (
           </p>
           <p><strong className="cursive"> &#60;3 Dicia & Erica</strong></p>
           <div className="social-media">
-            <a className="btn purple" target="_blank" href="https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/">
+            <ReactGA.OutboundLink
+              eventLabel="Facebook Group CTA"
+              to="https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/"
+              target="_blank"
+              className="btn purple"
+            >
               <span>Shop Our Online Pop-up Mondays @ 8pm EST</span>
-            </a>
-            <a className="btn teal" target="_blank" href="https://www.instagram.com/lulasistersdiciaerica/">
+            </ReactGA.OutboundLink>
+            <ReactGA.OutboundLink
+              eventLabel="Instagram CTA"
+              to="https://www.instagram.com/lulasistersdiciaerica/"
+              target="_blank"
+              className="btn teal"
+            >
               <span>Follow Us on Instagram</span>
-            </a>
+            </ReactGA.OutboundLink>
           </div>
         </div>
       </div>

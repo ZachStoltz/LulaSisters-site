@@ -1,5 +1,6 @@
 import eventJSON from '../../../../static/events.json';
 import Loader from '../common/Loader.jsx';
+import ReactGA from 'react-ga';
 import React, { Component } from 'react';
 
 export class EventsContainer extends Component {
@@ -49,20 +50,22 @@ export class EventsContainer extends Component {
         <div className="wrapper">
           <div className="content">
             <div className="call-to-action">
-              <a
+              <ReactGA.OutboundLink
+                eventLabel="Host-a-popup CTA"
+                to="https://docs.google.com/forms/d/e/1FAIpQLScYFj1OYwwfvcDbdXknPxb4G0A6oEXdlxNgGgYqEeEDa67Ieg/viewform?usp=send_form"
                 target="_blank"
-                href="https://docs.google.com/forms/d/e/1FAIpQLScYFj1OYwwfvcDbdXknPxb4G0A6oEXdlxNgGgYqEeEDa67Ieg/viewform?usp=send_form"
               >
-                <img src="/static/style/img/schedule-a-pop-up.jpeg" />
-              </a>
+                <img alt="schedule a pop-up" src="/static/style/img/schedule-a-pop-up.jpeg" />
+              </ReactGA.OutboundLink>
               <div className="wrapper">
-                <a
+                <ReactGA.OutboundLink
                   className="btn"
+                  eventLabel="Host-a-popup CTA"
+                  to="https://docs.google.com/forms/d/e/1FAIpQLScYFj1OYwwfvcDbdXknPxb4G0A6oEXdlxNgGgYqEeEDa67Ieg/viewform?usp=send_form"
                   target="_blank"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLScYFj1OYwwfvcDbdXknPxb4G0A6oEXdlxNgGgYqEeEDa67Ieg/viewform?usp=send_form"
                 >
                   Schedule Now!
-                </a>
+                </ReactGA.OutboundLink>
               </div>
             </div>
 

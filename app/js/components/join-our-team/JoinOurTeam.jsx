@@ -1,6 +1,7 @@
 import Collapsible from '../common/Collapsible.jsx';
 import CollapsibleItem from '../common/CollapsibleItem.jsx';
 import React from 'react';
+import ReactGA from 'react-ga';
 
 export default () => (
   <section id="join-team">
@@ -11,13 +12,14 @@ export default () => (
           Enjoy full-time income for part-time work!
         </h5>
         <div className="call-to-action">
-          <a
+          <ReactGA.OutboundLink
             className="btn"
-            href="https://mylularoe.com/join/LuLaSistersDiciaErica"
+            eventLabel="Join Our Team CTA"
+            to="https://mylularoe.com/join/LuLaSistersDiciaErica"
             target="_blank"
           >
             Join Now!
-          </a>
+          </ReactGA.OutboundLink>
         </div>
         <Collapsible type="accordion" popout>
           <CollapsibleItem

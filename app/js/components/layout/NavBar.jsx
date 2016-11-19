@@ -2,6 +2,7 @@ import Divider from '../common/Divider.jsx';
 import Dropdown from '../common/Dropdown.jsx';
 import { Link } from 'react-router';
 import React from 'react';
+import ReactGA from 'react-ga';
 import SideNav from '../common/SideNav.jsx';
 
 export default () => (
@@ -38,9 +39,13 @@ export default () => (
         title="Shop"
       >
         <li>
-          <a href="https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/" target="_blank">
+          <ReactGA.OutboundLink
+            eventLabel="Facebook Shopping Group"
+            to="https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/"
+            target="_blank"
+          >
             Shop Our FB Page
-          </a>
+          </ReactGA.OutboundLink>
         </li>
         <Divider />
         <li><Link to="events">Host/Shop A Popup!</Link></li>
