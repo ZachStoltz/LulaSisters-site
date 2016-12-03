@@ -2,6 +2,7 @@ import Collapsible from './Collapsible.jsx';
 import CollapsibleItem from './CollapsibleItem.jsx';
 import Divider from './Divider.jsx';
 import Link from 'react-router/lib/Link';
+import { sendOutboundEvent } from '../helpers';
 import { unmountComponentAtNode } from 'react-dom';
 import React, { Component, PropTypes } from 'react';
 
@@ -68,7 +69,12 @@ export default class SideNav extends Component {
           </li>
           <Divider />
           <li>
-            <a href="https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/" target="_blank">
+            <a
+              href="https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/"
+              target="_blank"
+              data-event-label="Facebook Group CTA"
+              onTouchTap={sendOutboundEvent}
+            >
               Shop Our FB Page
             </a>
           </li>

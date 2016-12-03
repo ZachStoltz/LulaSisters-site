@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-pascal-case */
 import FAQ from './FAQ.jsx';
 import React from 'react';
-import ReactGA from 'react-ga';
+import { sendOutboundEvent } from '../helpers';
 
 export default () => (
   <section id="faq">
@@ -87,13 +87,14 @@ export default () => (
         question="How do I signup for LuLaRoe?"
         answer={<p>
           First, fill out this link:&nbsp;
-          <ReactGA.OutboundLink
-            eventLabel="Join Our Team CTA"
-            to="https://mylularoe.com/join/LuLaSistersDiciaErica"
+          <a
+            href="https://mylularoe.com/join/LuLaSistersDiciaErica"
             target="_blank"
+            data-event-label="Join Our Team CTA"
+            onTouchTap={sendOutboundEvent}
           >
             LuLaSistersDiciaErica&nbsp;
-          </ReactGA.OutboundLink>
+          </a>
           Then you will open an Onboarding ticket at support.lularoe.com. We, of course, will help you with everything you need. We have an entire toolkit ready to help you every step of the way!
         </p>}
       />

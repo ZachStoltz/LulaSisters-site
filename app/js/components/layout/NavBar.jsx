@@ -2,7 +2,7 @@ import Divider from '../common/Divider.jsx';
 import Dropdown from '../common/Dropdown.jsx';
 import { Link } from 'react-router';
 import React from 'react';
-import ReactGA from 'react-ga';
+import { sendOutboundEvent } from '../helpers';
 import SideNav from '../common/SideNav.jsx';
 
 export default () => (
@@ -39,13 +39,14 @@ export default () => (
         title="Shop"
       >
         <li>
-          <ReactGA.OutboundLink
-            eventLabel="Facebook Shopping Group"
-            to="https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/"
+          <a
+            href="https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/"
             target="_blank"
+            data-event-label="Facebook Group CTA"
+            onTouchTap={sendOutboundEvent}
           >
             Shop Our FB Page
-          </ReactGA.OutboundLink>
+          </a>
         </li>
         <Divider />
         <li><Link to="events">Host/Shop A Popup!</Link></li>

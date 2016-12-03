@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactGA from 'react-ga';
+import { sendOutboundEvent } from './helpers';
 
 export default () => (
   <section id="about">
@@ -24,13 +24,14 @@ export default () => (
           </p>
           <p>
             If you would like to shop, check out our
-            <ReactGA.OutboundLink
-              eventLabel="Facebook Group CTA"
-              to="https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/"
+            <a
+              href="https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/"
               target="_blank"
+              data-event-label="Facebook Group CTA"
+              onTouchTap={sendOutboundEvent}
             >
               &nbsp;Facebook shopping page.
-            </ReactGA.OutboundLink>
+            </a>
             &nbsp;If you are interested in learning more
             about LuLaRoe, hosting a pop up party, or how to become a
             consultant & join our team, click around for more info! We
@@ -39,22 +40,24 @@ export default () => (
           </p>
           <p><strong className="cursive"> &#60;3 Dicia & Erica</strong></p>
           <div className="social-media">
-            <ReactGA.OutboundLink
-              eventLabel="Facebook Group CTA"
-              to="https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/"
+            <a
+              href="https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/"
               target="_blank"
+              data-event-label="Facebook Group CTA"
               className="btn purple"
+              onTouchTap={sendOutboundEvent}
             >
-              <span>Shop Our Online Pop-up Mondays @ 8pm EST</span>
-            </ReactGA.OutboundLink>
-            <ReactGA.OutboundLink
-              eventLabel="Instagram CTA"
-              to="https://www.instagram.com/lulasistersdiciaerica/"
+              Shop Our Online Pop-up Mondays @ 8pm EST
+            </a>
+            <a
+              href="https://www.instagram.com/lulasistersdiciaerica/"
               target="_blank"
+              data-event-label="Instagram CTA"
               className="btn teal"
+              onTouchTap={sendOutboundEvent}
             >
-              <span>Follow Us on Instagram</span>
-            </ReactGA.OutboundLink>
+              Follow Us on Instagram
+            </a>
           </div>
         </div>
       </div>

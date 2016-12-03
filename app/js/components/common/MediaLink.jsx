@@ -1,18 +1,19 @@
 import React from 'react';
-import ReactGA from 'react-ga';
+import { sendOutboundEvent } from '../helpers';
 
 export default (props) => (
   <div className={props.type}>
-    <ReactGA.OutboundLink
-      eventLabel={props.eventLabel}
-      to={props.href}
+    <a
+      href={props.href}
       target={props.target}
+      data-event-label={props.eventLabel}
+      onTouchTap={sendOutboundEvent}
     >
       <i
         className={`fa fa-${props.type === 'email' ? 'at' : props.type}`}
         aria-hidden="true"
       />
       {props.name}
-    </ReactGA.OutboundLink>
+    </a>
   </div>
 );

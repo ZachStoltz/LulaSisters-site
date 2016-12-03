@@ -1,6 +1,6 @@
 import eventJSON from '../../../../static/events.json';
 import Loader from '../common/Loader.jsx';
-import ReactGA from 'react-ga';
+import { sendOutboundEvent } from '../helpers';
 import React, { Component } from 'react';
 
 export class EventsContainer extends Component {
@@ -50,22 +50,24 @@ export class EventsContainer extends Component {
         <div className="wrapper">
           <div className="content">
             <div className="call-to-action">
-              <ReactGA.OutboundLink
-                eventLabel="Host-a-popup CTA"
-                to="https://docs.google.com/forms/d/e/1FAIpQLScYFj1OYwwfvcDbdXknPxb4G0A6oEXdlxNgGgYqEeEDa67Ieg/viewform?usp=send_form"
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScYFj1OYwwfvcDbdXknPxb4G0A6oEXdlxNgGgYqEeEDa67Ieg/viewform?usp=send_form"
                 target="_blank"
+                data-event-label="Host-a-popup CTA"
+                onTouchTap={sendOutboundEvent}
               >
                 <img alt="schedule a pop-up" src="/static/style/img/schedule-a-pop-up.jpeg" />
-              </ReactGA.OutboundLink>
+              </a>
               <div className="wrapper">
-                <ReactGA.OutboundLink
-                  className="btn"
-                  eventLabel="Host-a-popup CTA"
-                  to="https://docs.google.com/forms/d/e/1FAIpQLScYFj1OYwwfvcDbdXknPxb4G0A6oEXdlxNgGgYqEeEDa67Ieg/viewform?usp=send_form"
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScYFj1OYwwfvcDbdXknPxb4G0A6oEXdlxNgGgYqEeEDa67Ieg/viewform?usp=send_form"
                   target="_blank"
+                  className="btn"
+                  data-event-label="Host-a-popup CTA"
+                  onTouchTap={sendOutboundEvent}
                 >
                   Schedule Now!
-                </ReactGA.OutboundLink>
+                </a>
               </div>
             </div>
 
