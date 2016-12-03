@@ -2,7 +2,14 @@ import eventJSON from '../../../../static/events.json';
 import Loader from '../common/Loader.jsx';
 import { sendOutboundEvent } from '../helpers';
 import React, { Component } from 'react';
-
+// { example json
+//   "id": ,
+//   "host": ,
+//   "location": ,
+//   "date": ,
+//   "time": ,
+//   "comments":
+// }
 export class EventsContainer extends Component {
   constructor(props) {
     super(props);
@@ -26,7 +33,7 @@ export class EventsContainer extends Component {
     if (events.length === 0) {
       return (
         <div>
-          <h5>No Popup Scheduled At This Time =(</h5>
+          <h5>Stay tuned for upcoming 2017 events!!</h5>
         </div>
       );
     }
