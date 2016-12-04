@@ -5,3 +5,4 @@ typings
 .settings
 .idea
 static/bundle*
+.vscode
