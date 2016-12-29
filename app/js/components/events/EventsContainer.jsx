@@ -55,12 +55,6 @@ export class EventsContainer extends Component {
     const { events, isFetching } = this.state;
     return (
       <section id="events">
-        <Helmet
-          title="Events - LuLaSisters"
-          meta={[
-            ...setOgCommons('events'),
-          ]}
-        />
         <div className="wrapper">
           <div className="content">
             <div className="call-to-action">
