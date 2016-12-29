@@ -1,12 +1,22 @@
+import Helmet from 'react-helmet';
 import React from 'react';
-import { sendOutboundEvent } from './helpers';
+import { description, sendOutboundEvent, setOgCommons } from './helpers';
 
 export default () => (
   <section id="about">
+    <Helmet
+      title="LuLaSisters"
+      meta={[
+        ...setOgCommons('home'),
+        { name: 'description',
+          content: description },
+
+      ]}
+    />
     <div className="wrapper">
       <div className="paper">
         <div className="img-container">
-          <img src="/static/style/img/diciaanderica.jpg" alt={"Dicia & Erica"} />
+          <img src="/static/style/img/diciaanderica.jpg" alt={'Dicia & Erica'} />
         </div>
         <div className="bio">
           <h3 className="cursive">LuLa Sisters: Dicia & Erica</h3>

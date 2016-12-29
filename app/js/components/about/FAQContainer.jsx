@@ -1,10 +1,17 @@
 /* eslint-disable react/jsx-pascal-case */
 import FAQ from './FAQ.jsx';
+import Helmet from 'react-helmet';
 import React from 'react';
-import { sendOutboundEvent } from '../helpers';
+import { sendOutboundEvent, setOgCommons } from '../helpers';
 
 export default () => (
   <section id="faq">
+    <Helmet
+      title="FAQ - LuLaSisters"
+      meta={[
+        ...setOgCommons('frequently-asked'),
+      ]}
+    />
     <div className="wrapper">
       <div>
         <h2>Frequently Asked Questions</h2>

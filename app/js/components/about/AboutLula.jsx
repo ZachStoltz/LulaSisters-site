@@ -1,7 +1,15 @@
+import Helmet from 'react-helmet';
 import React from 'react';
+import { setOgCommons } from '../helpers';
 
 export default () => (
   <section id="about-lularoe">
+    <Helmet
+      title="About LuLaRoe - LuLaSisters"
+      meta={[
+        ...setOgCommons('about-lularoe'),
+      ]}
+    />
     <div className="wrapper">
       <div className="content">
         <img src="/static/style/img/lularoe-quote.png" alt="What is LuLaRoe?" />

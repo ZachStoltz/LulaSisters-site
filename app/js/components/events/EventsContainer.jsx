@@ -1,7 +1,8 @@
 import eventJSON from '../../../../static/events.json';
+import Helmet from 'react-helmet';
 import Loader from '../common/Loader.jsx';
-import { sendOutboundEvent } from '../helpers';
 import React, { Component } from 'react';
+import { sendOutboundEvent, setOgCommons } from '../helpers';
 // { example json
 //   "id": ,
 //   "host": ,
@@ -54,6 +55,12 @@ export class EventsContainer extends Component {
     const { events, isFetching } = this.state;
     return (
       <section id="events">
+        <Helmet
+          title="Events - LuLaSisters"
+          meta={[
+            ...setOgCommons('events'),
+          ]}
+        />
         <div className="wrapper">
           <div className="content">
             <div className="call-to-action">
