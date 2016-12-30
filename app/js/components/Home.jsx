@@ -4,6 +4,15 @@ import { description, sendOutboundEvent, setOgCommons } from './helpers';
 
 export default () => (
   <section id="about">
+    <Helmet
+      title="LuLaSisters"
+      meta={[
+        ...setOgCommons('home'),
+        { name: 'description',
+          content: description },
+
+      ]}
+    />
     <div className="wrapper">
       <div className="paper">
         <div className="img-container">

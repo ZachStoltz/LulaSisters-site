@@ -6,6 +6,12 @@ import { sendOutboundEvent, setOgCommons } from '../helpers';
 
 export default () => (
   <section id="faq">
+    <Helmet
+      title="FAQ - LuLaSisters"
+      meta={[
+        ...setOgCommons('frequently-asked'),
+      ]}
+    />
     <div className="wrapper">
       <div>
         <h2>Frequently Asked Questions</h2>

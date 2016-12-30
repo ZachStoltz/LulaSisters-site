@@ -28,6 +28,12 @@ export default class Team extends Component {
   render() {
     return (
       <section id="team">
+        <Helmet
+          title="Team LuLaQueens - LuLaSisters"
+          meta={[
+            ...setOgCommons('team-lula-queens'),
+          ]}
+        />
         <div className="wrapper">
           <div className="content">
             <h1>Our Wonderful Team Members!</h1>

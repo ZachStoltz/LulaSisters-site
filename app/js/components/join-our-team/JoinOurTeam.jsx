@@ -6,6 +6,12 @@ import { sendOutboundEvent, setOgCommons } from '../helpers';
 
 export default () => (
   <section id="join-team">
+    <Helmet
+      title="Join Our Team - LuLaSisters"
+      meta={[
+        ...setOgCommons('join-our-team'),
+      ]}
+    />
     <div className="wrapper">
       <h1>Join Team LuLa Queens!</h1>
       <div className="container">
