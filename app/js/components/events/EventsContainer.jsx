@@ -1,3 +1,4 @@
+import Event from '../common/Event.jsx';
 import eventJSON from '../../../../static/events.json';
 import Helmet from 'react-helmet';
 import Loader from '../common/Loader.jsx';
@@ -39,15 +40,7 @@ export class EventsContainer extends Component {
       );
     }
     return events.map(ev => {
-      return (
-        <div key={ev.id}>
-          <h5>{ev.host}</h5>
-          <div>{ev.location}</div>
-          <div>{ev.date}</div>
-          <div>{ev.time}</div>
-          <div>{ev.comments}</div>
-        </div>
-      );
+      return <Event key={ev.id} {...ev} className="event" />;
     });
   }
 
@@ -86,10 +79,12 @@ export class EventsContainer extends Component {
             </div>
 
             <h3>Upcoming Events</h3>
-            {isFetching
-              ? <Loader />
-              : this.renderEvents(events)
-            }
+            <div className="events-wrapper">
+              {isFetching
+                ? <Loader />
+                : this.renderEvents(events)
+              }
+            </div>
             <div className="calendar-wrapper">
 
             </div>

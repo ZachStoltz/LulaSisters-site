@@ -1,5 +1,6 @@
 #events > .wrapper > .content {
   align-items: center;
+  text-align: center;
 }
 
 .call-to-action {
@@ -18,5 +19,25 @@
 
   .btn {
     width: 20rem;
+  }
+}
+
+.events-wrapper {
+  display: flex;
+  flex-flow: column;
+  margin: 0px 14%;
+
+  .event {
+    h5 {
+      color: $submit;
+      &:after {
+        content: "";
+        background-color: $fb-shop;
+        display: block;
+        height: .2rem;
+        margin: 1rem auto;
+        width: 5rem;
+      }
+    }
   }
 }
