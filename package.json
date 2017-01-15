@@ -13,7 +13,6 @@
     "build": "cross-env NODE_ENV=production webpack",
     "build:dev": "cross-env NODE_ENV=development webpack",
     "watch": "cross-env NODE_ENV=development webpack --watch",
-    "postinstall": "npm run build",
     "forever": "npm run build && cross-env NODE_ENV=production forever start -d server.js"
   },
   "keywords": [],
