@@ -7,13 +7,19 @@ section#team {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    .member {
-      flex: 1 1  auto;
-      margin: 1rem;
 
+    .member {
+      flex: 0 1 0%;
+      margin: 1rem;
+      
+      .img--wrapper {
+        display: flex;
+        justify-content: center;
+      }
       img {
-        width: 10rem;
-        height: 10rem;
+        height: 27rem;
+        max-width: 28rem;
+        border-radius: 1rem;
       }
 
       a {

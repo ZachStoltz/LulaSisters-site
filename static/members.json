@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Jen Naylor",
+    "location": "Johnstown, PA",
+    "img": "/static/style/img/members/JenNaylor.jpg",
+    "bio": "I am starting my LuLaRoe journey soon and very excited to share what LuLaRoe has to offer to others. I am a mother of 2, a full time Physician Assistant, and Girl Scout leader for 22 fabulous young women. I decided to become a LuLaRoe fashion consultant because it makes me feel confident in what I am wearing while being very comfortable. I want to share that with others",
+    "info": [
+      {
+        "type": "facebook",
+        "href": "https://www.facebook.com/groups/LuLaRoeJenNaylor",
+        "name": "LuLaRoeJenNaylor"
+      }
+    ]
+  }, {
+    "name": "Tesa Funyak",
+    "location": "Hudson, OH",
+    "img": "/static/style/img/members/Tesa.jpg",
+    "bio": "Hello! I am Tesa Funyak and I'm starting off 2017 with a new position as a Global Sales Manager at ADP where I have worked the past 10 years and also as a new LuLaRoe consultant. I could not be more excited to start this journey. My husband is currently staying at home with our 3 amazing children, Brennan 9, Raegan 5 and Kellan 1 and he will be helping me with our LLR business. Thanks for Dicia Marguccio and Erica Stoltz for being great role models and mentors for me. I often wear LuLaRoe for business meetings as you can see in the picture. My favorite pieces (besides the leggings of course) are the Julia and Cassie. I love being a walking advertisement!",
+    "info": [
+      {
+        "type": "facebook",
+        "href": "https://www.facebook.com/groups/LuLaRoeTesaFunyak/",
+        "name": "LuLaRoeTesaFunyak"
+      }
+    ]
+  }, {
+    "name": "Jessica Urban",
+    "location": "Johnstown, PA",
+    "img": "/static/style/img/members/JessicaUrban.jpg",
+    "bio": "My name is Jessica Urban and I've been a LuLaRoe consultant for four months.  I am a stay at home Mom, I have a beautiful daughter named Brooklynn, married to my best-friend A.J. and have two Labrador Dogs Daisy and Lilly!  My two passions besides my family are fashion and fitness.",
+    "info": [
+      {
+        "type": "facebook",
+        "href": "https://www.facebook.com/groups/LuLaRoeJessicaUrban/",
+        "name": "LuLaRoeJessicaUrban"
+      }
+    ]
+  }, {
+    "name": "Ashley Miller",
+    "location": "Johnstown, PA",
+    "img": "/static/style/img/members/AshleyMiller.jpg",
+    "bio": "Hi My name is Ashley Christine (Miller) I have been a LuLaRoe consultant since October 2016. Im a fur momma of 2 dogs, Lexi and Elsa.  I went to culinary school and now do some baking on the side. For my day job i work with children. When Im not working you can usually find me volunteering for something around town. I can't wait to shop with you!",
+    "info": [
+      {
+        "type": "facebook",
+        "href": "https://www.facebook.com/groups/LLRwithAshleyChristine/",
+        "name": "LLRwithAshleyChristine"
+      }
+    ]
+  }
+]
