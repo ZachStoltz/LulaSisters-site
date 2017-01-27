@@ -1,12 +1,4 @@
-[
-  {
-    "id": "1",
-    "host": "Multi-Consultant Open House",
-    "location": "Holiday Inn Express & Suites - 1440 Scalp Ave, Johnstown, PA",
-    "date": "Saturday January 21, 2017",
-    "time": "10am-1pm",
-    "comments": ""
-  }, {
+[{
     "id": "2",
     "host": "Cinderella Project Multi-Consultant Online Fundraiser",
     "location": "Online",
@@ -47,8 +39,28 @@
     "comments": "Proceeds of sales will benefit Patton, PA community park."
   }, {
     "id": "4",
-    "host": "February Open House",
-    "location":"Johnstown PA",
-    "date": "TBD"
+    "host": "Bonanza Pop-up Event",
+    "location":"Galleria Mall Johnstown, PA",
+    "date": "Saturday, February 4th",
+    "time": "10am - 3pm",
+    "comments": "A multi consultant event brining together the largest collection of LuLaRoe consultants from the local and tri-state area."
+  },{
+    "id": "5",
+    "host": "Multi-Consultant Open House",
+    "location": "Holiday Inn Express & Suites - 1440 Scalp Ave, Johnstown, PA",
+    "date": "Saturday, February 18th",
+    "time": "10am - 1pm"
+  },{
+    "id": "6",
+    "host": "Woman's Showcase",
+    "location": "Pasquerilla Conference Center - 301 Napoleon Street, Johnstown, PA",
+    "date": "Saturday, March 25th",
+    "time": "11am - 3pm"
+  },{
+    "id": "7",
+    "host": "Multi-Consultant Open House",
+    "location": "Holiday Inn Express & Suites - 1440 Scalp Ave, Johnstown, PA",
+    "date": "Saturday, March 25th",
+    "time": "6pm - 8pm"
   }
 ]
