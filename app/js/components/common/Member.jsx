@@ -7,17 +7,20 @@ export const Member = props => {
     name,
     location,
     info = [],
-    bio,
   } = props;
   return (
     <div className="member">
-      <div className="img--wrapper">
-        <img src={img} alt={name} />
+      <img src={img} alt={name} />
+      <div className="member--header">
+        <div className="member--header-title">{name}</div>
+        <div className="member--header-title">
+          {Array.isArray(location)
+            ? location.map(city => <div>{city}</div>)
+            : location
+          }
+        </div>
       </div>
       <div className="member-info content">
-        <span><strong>Name:</strong> {name}</span>
-        <span><strong>Location:</strong> {location}</span>
-        <strong>Social Links:</strong>
         {info.map(link => (
           <MediaLink
             key={`${link.type}-${link.name}`}
@@ -26,7 +29,6 @@ export const Member = props => {
             name={link.name}
           />
         ))}
-        <p>{bio}</p>
       </div>
     </div>
   );
@@ -34,7 +36,7 @@ export const Member = props => {
 Member.propTypes = {
   img: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
+  location: PropTypes.oneOfType(PropTypes.array, PropTypes.string),
   info: PropTypes.array.isRequired,
   bio: PropTypes.string,
 };

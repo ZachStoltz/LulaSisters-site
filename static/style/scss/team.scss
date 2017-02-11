@@ -3,6 +3,11 @@ section#team {
     color: $white;
   }
 
+  .members--wrapper {
+    max-width: 90%;
+    align-self: center;
+  }
+
   .members {
     display: flex;
     justify-content: space-around;
@@ -11,10 +16,25 @@ section#team {
     .member {
       flex: 0 1 18rem;
       margin: 1rem;
+
+      .member-info.content {
+        padding: 0;
+        margin-top: -5rem;
+      }
       
-      .img--wrapper {
-        display: flex;
-        justify-content: center;
+      .member--header {
+        position: relative;
+        bottom: 5.7rem;
+        background-color: rgba(126, 87, 139, 0.65);
+        border-radius: 0 0 1rem 1rem;
+        padding: 0 1rem;
+
+        .member--header-title {
+          font-size: 1.8rem;
+          color: $white;
+          font-weight: 200;
+          letter-spacing: 0.4rem;
+        }
       }
       img {
         height: 27rem;
@@ -25,6 +45,56 @@ section#team {
       a {
         width: 100%;
       }
+    }
+    .member:nth-child(1) {
+      .member--header {
+        bottom: 8.4rem;
+      }
+      .member-info {
+        margin-top: -7.6rem;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 3.2rem;
+    }
+    .members {
+      display: block;
+
+      .member {
+        display: block;
+
+        img {
+          height: 100%;
+          max-width: 100%;
+          width: 100%;
+          border-radius: 1rem;
+        }
+
+        .member-info {
+          font-size: 1.2rem;
+        }
+
+        a {
+          height: 4rem;
+          font-size: 1.4rem;
+          line-height: 4rem;
+          padding: 0;
+          font-weight: 200;
+          text-align: center;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 694px) {
+    .members--wrapper {
+      max-width: 100%;
+      align-self: center;
+    }
+
+    .members > .member {
+      margin: 0.5rem;
     }
   }
 }

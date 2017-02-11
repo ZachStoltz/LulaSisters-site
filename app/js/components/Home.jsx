@@ -19,17 +19,17 @@ export default () => (
           <img src="/static/style/img/diciaanderica.jpg" alt={'Dicia & Erica'} />
         </div>
         <div className="bio">
-          <h3 className="cursive">LuLa Sisters: Dicia & Erica</h3>
+          <h3 className="cursive">LuLa Sisters: Dicia &amp; Erica</h3>
           <p>
             Welcome to the Team LuLa Queens page!
-            We are Dicia Marguccio & Erica Stoltz of Team LuLaSisters,
+            We are Dicia Marguccio &amp; Erica Stoltz of Team LuLaSisters,
             the original members of Team LuLa Queens!
             We are sister-in-laws who fell in love with LuLaRoe
-            as customers & decided to bless others’ lives by
+            as customers &amp; decided to bless others’ lives by
             becoming fashion consultants in June 2016. Dicia lives
-            in Windber, PA & Erica lives in Columbia, MD. Together,
+            in Windber, PA &amp; Erica lives in Columbia, MD. Together,
             we work to spread the LuLa love across state lines.
-            LuLaRoe has been a huge blessing in our lives & in the
+            LuLaRoe has been a huge blessing in our lives &amp; in the
             lives of many families.
           </p>
           <p>

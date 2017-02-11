@@ -32,12 +32,14 @@ export default class Team extends Component {
         />
         <div className="wrapper">
           <div className="content">
-            <h1>Our Wonderful Team Members!</h1>
-            <div className="members">
-              {!members
-                ? <Loader />
-                : buildMemberComponents(members)
-              }
+            <h1>Team Lula Queens</h1>
+            <div className="members--wrapper">
+              <div className="members">
+                {!members
+                  ? <Loader />
+                  : buildMemberComponents(members)
+                }
+              </div>
             </div>
           </div>
         </div>

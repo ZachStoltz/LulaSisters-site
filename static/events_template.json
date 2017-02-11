@@ -1,0 +1,66 @@
+[{
+    "id": "2",
+    "host": "Cinderella Project Multi-Consultant Online Fundraiser",
+    "location": "Online",
+    "date": [{
+        "when": "Sunday, January 29th",
+        "title": "LuLaRoeJessicaUrban",
+        "link": "https://www.facebook.com/groups/LuLaRoeJessicaUrban/"
+      }, {
+        "when": "Sunday, January 29th",
+        "title": "LuLaRoeTesaFunyak",
+        "link": "https://www.facebook.com/groups/LuLaRoeTesaFunyak/"
+      }, {
+        "when": "Monday, January 30th",
+        "title": "LuLaRoeSistersDiciaErica",
+        "link": "https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/"
+      }, {
+        "when": "Wednesday, February 1st",
+        "title": "LLRwithAshleyChristine",
+        "link": "https://www.facebook.com/groups/LLRwithAshleyChristine/"
+      }
+    ],
+    "time": "",
+    "comments": "Shop online sales from Team LuLa Queens members the week of January 29th. A portion of every sale is donated to the Cinderella Project, which helps provide girls with prom gowns, shoes and accessories for their prom for FREE! Learn more here: www.johnstowncinderellaproject.org"
+  }, {
+    "id": "3",
+    "host": "Friends of Patton Park Fundraiser",
+    "location": "Online",
+    "date": [{
+        "when": "Sunday, February 5th",
+        "title": "LuLaRoeTesaFunyak",
+        "link": "https://www.facebook.com/groups/LuLaRoeTesaFunyak/"
+      }, {
+        "when": "Monday, February 6th",
+        "title": "LuLaRoeSistersDiciaErica",
+        "link": "https://www.facebook.com/groups/LuLaRoeSistersDiciaErica/"
+      }
+    ],
+    "comments": "Proceeds of sales will benefit Patton, PA community park."
+  }, {
+    "id": "4",
+    "host": "Bonanza Pop-up Event",
+    "location":"Galleria Mall Johnstown, PA",
+    "date": "Saturday, February 4th",
+    "time": "10am - 3pm",
+    "comments": "A multi consultant event brining together the largest collection of LuLaRoe consultants from the local and tri-state area."
+  },{
+    "id": "5",
+    "host": "Multi-Consultant Open House",
+    "location": "Holiday Inn Express & Suites - 1440 Scalp Ave, Johnstown, PA",
+    "date": "Saturday, February 18th",
+    "time": "10am - 1pm"
+  },{
+    "id": "6",
+    "host": "Woman's Showcase",
+    "location": "Pasquerilla Conference Center - 301 Napoleon Street, Johnstown, PA",
+    "date": "Saturday, March 25th",
+    "time": "11am - 3pm"
+  },{
+    "id": "7",
+    "host": "Multi-Consultant Open House",
+    "location": "Holiday Inn Express & Suites - 1440 Scalp Ave, Johnstown, PA",
+    "date": "Saturday, March 25th",
+    "time": "6pm - 8pm"
+  }
+]
