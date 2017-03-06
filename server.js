@@ -17,10 +17,14 @@ const ClientApp = require('./app/js/components/App.jsx').default;
 const routes = ClientApp.routes;
 
 // Controllers
-const eventController = require('./app/js/server/controllers/events-controller');
+const EventController = require('./app/js/server/controllers/events-controller');
 
 const app = express();
 firebase.initializeApp(firebaseConfig);
+app.eventRef = firebase.database().ref('events');
+
+// event api endpoints
+new EventController(app); // eslint-disable-line
 
 app.use(helmet());
 app.use(compression());
@@ -29,8 +33,6 @@ app.set('view engine', 'hbs');
 
 app.use('/static', serveStatic(path.join(__dirname, '/static')));
 app.use(favicon(path.join(__dirname, '/static/style/img/favicon.ico')));
-
-app.use('/api/events', eventController);
 
 app.use((req, res) => {
   match({ routes: routes(), location: req.url }, (error, redirectLocation, renderProps) => {
