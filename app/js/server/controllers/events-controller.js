@@ -5,7 +5,7 @@ class EventsController {
   }
 
   getEvents(req, res) {
-    req.app.eventRef.once('value')
+    return req.app.eventRef.once('value')
       .then(snapshot => {
         const rtnEvents = [];
         snapshot.forEach(childSnapshot => {
@@ -13,7 +13,7 @@ class EventsController {
 
           rtnEvents.push(event);
         });
-        res.status(200).json(rtnEvents);
+        return res.status(200).json(rtnEvents);
       })
       .catch(err => res.status(500).json(err));
   }
