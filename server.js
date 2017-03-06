@@ -17,6 +17,10 @@ const Helmet = require('react-helmet');
 const ClientApp = require('./app/js/components/App.jsx').default;
 const routes = ClientApp.routes;
 
+if (process.env.NODE_ENV === 'development') {
+  require('dotenv').config(); //eslint-disable-line
+}
+
 // Controllers
 const EventController = require('./app/js/server/controllers/events-controller');
 
