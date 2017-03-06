@@ -1,17 +1,9 @@
 import Event from '../common/Event.jsx';
-import eventJSON from '../../../../static/events.json';
 import Helmet from 'react-helmet';
 import Loader from '../common/Loader.jsx';
 import React, { Component } from 'react';
 import { sendOutboundEvent, setOgCommons } from '../helpers';
-// { example json
-//   "id": ,
-//   "host": ,
-//   "location": ,
-//   "date": ,
-//   "time": ,
-//   "comments":
-// }
+
 export class EventsContainer extends Component {
   constructor(props) {
     super(props);
@@ -22,13 +14,33 @@ export class EventsContainer extends Component {
     };
   }
   componentDidMount() {
-    // TODO: Testing out feature, Need to implement firebase or something;
-    setTimeout(() => {
-      this.setState({
-        events: eventJSON,
-        isFetching: false,
-      });
-    }, 1000);
+    fetch('/api/events', {
+      method: 'GET',
+      headers: {
+        Accept: 'application/json',
+      },
+    })
+    .then(function checkStatus(response) { //eslint-disable-line
+      if (response.status >= 400) {
+        const error = new Error('Unable to load events at this time.  Please check up later.');
+        error.response = response;
+
+        throw error;
+      }
+      return response;
+    })
+    .then(function parseJSON(response) { //eslint-disable-line
+      return response.json();
+    })
+    .then(events => this.setState({
+      events,
+      isFetching: false,
+    }))
+    .catch(err => this.setState({
+      err,
+      events: [],
+      isFetching: false,
+    }));
   }
 
   renderEvents(events) {

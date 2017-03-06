@@ -1,10 +1,17 @@
 require('babel-register');
+if (process.env.NODE_ENV === 'development') {
+  require('dotenv').config(); //eslint-disable-line
+}
 const compression = require('compression');
 const express = require('express');
 const hbs = require('express-handlebars');
+const helmet = require('helmet');
 const path = require('path');
 const serveStatic = require('serve-static');
 const favicon = require('serve-favicon');
+const firebase = require('firebase');
+const firebaseConfig = require('./firebase-config');
+
 // Server Side React
 const { match, RouterContext } = require('react-router');
 const ReactDOMServer = require('react-dom/server');
@@ -13,8 +20,21 @@ const Helmet = require('react-helmet');
 const ClientApp = require('./app/js/components/App.jsx').default;
 const routes = ClientApp.routes;
 
-const app = express();
+// Controllers
+const EventController = require('./app/js/server/controllers/events-controller');
 
+const app = express();
+if (Object.keys(firebaseConfig).some(key => !firebaseConfig[key])) {
+  console.error('Environment Variable missing for firebase configuration');
+} else {
+  firebase.initializeApp(firebaseConfig);
+  app.eventRef = firebase.database().ref('events');
+}
+
+// event api endpoints
+new EventController(app); // eslint-disable-line
+
+app.use(helmet());
 app.use(compression());
 app.engine('hbs', hbs({ defaultLayout: 'main', extname: '.hbs' }));
 app.set('view engine', 'hbs');
