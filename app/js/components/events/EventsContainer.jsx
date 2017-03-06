@@ -43,7 +43,14 @@ export class EventsContainer extends Component {
     }));
   }
 
-  renderEvents(events) {
+  renderEvents(events, err) {
+    if (err) {
+      return (
+        <div>
+          <h5>{err.message}</h5>
+        </div>
+      );
+    }
     if (events.length === 0) {
       return (
         <div>
@@ -57,7 +64,7 @@ export class EventsContainer extends Component {
   }
 
   render() {
-    const { events, isFetching } = this.state;
+    const { events, isFetching, err } = this.state;
     return (
       <section id="events">
         <Helmet
@@ -94,7 +101,7 @@ export class EventsContainer extends Component {
             <div className="events-wrapper">
               {isFetching
                 ? <Loader />
-                : this.renderEvents(events)
+                : this.renderEvents(events, err)
               }
             </div>
             <div className="calendar-wrapper">
