@@ -28,7 +28,7 @@ if (Object.keys(firebaseConfig).some(key => !firebaseConfig[key])) {
   console.error('Environment Variable missing for firebase configuration');
 } else {
   firebase.initializeApp(firebaseConfig);
-  app.eventRef = firebase.database().ref('events');
+  app.eventRef = firebase.database().ref();
 }
 
 // event api endpoints
