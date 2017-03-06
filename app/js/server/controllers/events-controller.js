@@ -5,7 +5,10 @@ class EventsController {
   }
 
   getEvents(req, res) {
-    return req.app.eventRef.once('value')
+    const eventRef = req.app.eventRef;
+    if (!eventRef) return res.status(500).json({ msg: 'Unable to process request due to env variable not being set', status: 500 });
+
+    return eventRef.once('value')
       .then(snapshot => {
         const rtnEvents = [];
         snapshot.forEach(childSnapshot => {

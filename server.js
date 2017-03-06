@@ -1,4 +1,7 @@
 require('babel-register');
+if (process.env.NODE_ENV === 'development') {
+  require('dotenv').config(); //eslint-disable-line
+}
 const compression = require('compression');
 const express = require('express');
 const hbs = require('express-handlebars');
@@ -17,17 +20,16 @@ const Helmet = require('react-helmet');
 const ClientApp = require('./app/js/components/App.jsx').default;
 const routes = ClientApp.routes;
 
-if (process.env.NODE_ENV === 'development') {
-  require('dotenv').config(); //eslint-disable-line
-}
-
 // Controllers
 const EventController = require('./app/js/server/controllers/events-controller');
 
 const app = express();
-firebase.initializeApp(firebaseConfig);
-
-app.eventRef = firebase.database().ref('events');
+if (Object.keys(firebaseConfig).some(key => !firebaseConfig[key])) {
+  console.error('Environment Variable missing for firebase configuration');
+} else {
+  firebase.initializeApp(firebaseConfig);
+  app.eventRef = firebase.database().ref('events');
+}
 
 // event api endpoints
 new EventController(app); // eslint-disable-line
