@@ -1,10 +1,4 @@
 [{
-    "id": "5",
-    "host": "Multi-Consultant Open House",
-    "location": "Holiday Inn Express & Suites - 1440 Scalp Ave, Johnstown, PA",
-    "date": "Saturday, February 18th",
-    "time": "10am - 1pm"
-  },{
     "id": "6",
     "host": "Woman's Showcase",
     "location": "Pasquerilla Conference Center - 301 Napoleon Street, Johnstown, PA",
@@ -15,6 +9,26 @@
     "host": "Multi-Consultant Open House",
     "location": "Holiday Inn Express & Suites - 1440 Scalp Ave, Johnstown, PA",
     "date": "Saturday, March 25th",
+    "time": "5pm - 8pm"
+  },{
+    "id": "7",
+    "host": "Multi-Consultant Open House",
+    "location": "Holiday Inn Express & Suites - 1440 Scalp Ave, Johnstown, PA",
+    "date": "Saturday, March 25th",
     "time": "5pm - 7pm"
+  },{
+    "id": "8",
+    "host": "Multi-Consultant Fundraiser",
+    "location": "Solomon Run Firehall - 176 Mt Airy Dr. Johnstown, PA",
+    "date": "Sunday April 23rd",
+    "time": "11am - 2pm",
+    "comments": "Fundraiser to benefit Richland Township Fire Department."
+  },{
+    "id": "9",
+    "host": "LuLaRoe Bingo Fundraiser",
+    "location": "Conemaugh Township Elementary School - 1516 Tire Hill Road Johnstown, PA",
+    "date": "Sunday May 7th",
+    "time": "Doors open at 12pm - Bingo starts @ 1pm",
+    "comments": "Fundraiser to benefit Conemaugh Township Elementary School Outdoor Classroom Project."
   }
 ]
