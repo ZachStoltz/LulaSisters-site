@@ -36,7 +36,7 @@ export const Member = props => {
 Member.propTypes = {
   img: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  location: PropTypes.oneOfType(PropTypes.array, PropTypes.string),
+  location: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
   info: PropTypes.array.isRequired,
   bio: PropTypes.string,
 };

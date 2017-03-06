@@ -2,9 +2,12 @@ require('babel-register');
 const compression = require('compression');
 const express = require('express');
 const hbs = require('express-handlebars');
+const helmet = require('helmet');
 const path = require('path');
 const serveStatic = require('serve-static');
 const favicon = require('serve-favicon');
+const firebase = require('firebase');
+const firebaseConfig = require('./firebaseConfig');
 // Server Side React
 const { match, RouterContext } = require('react-router');
 const ReactDOMServer = require('react-dom/server');
@@ -13,14 +16,21 @@ const Helmet = require('react-helmet');
 const ClientApp = require('./app/js/components/App.jsx').default;
 const routes = ClientApp.routes;
 
-const app = express();
+// Controllers
+const eventController = require('./app/js/server/controllers/events-controller');
 
+const app = express();
+firebase.initializeApp(firebaseConfig);
+
+app.use(helmet());
 app.use(compression());
 app.engine('hbs', hbs({ defaultLayout: 'main', extname: '.hbs' }));
 app.set('view engine', 'hbs');
 
 app.use('/static', serveStatic(path.join(__dirname, '/static')));
 app.use(favicon(path.join(__dirname, '/static/style/img/favicon.ico')));
+
+app.use('/api/events', eventController);
 
 app.use((req, res) => {
   match({ routes: routes(), location: req.url }, (error, redirectLocation, renderProps) => {

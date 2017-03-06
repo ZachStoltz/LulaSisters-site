@@ -1,5 +1,9 @@
 import ReactGA from 'react-ga';
 export const sendOutboundEvent = (e) => {
+  if (process.env.NODE_ENV === 'development') {
+    return console.log('DEV_MODE => OUTBOUND Event'); //eslint-disable-line
+  }
+
   const label = e.target.getAttribute('data-event-label');
   return ReactGA.outboundLink({
     label: label || e.target.href,
