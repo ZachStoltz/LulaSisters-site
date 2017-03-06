@@ -7,7 +7,8 @@ const path = require('path');
 const serveStatic = require('serve-static');
 const favicon = require('serve-favicon');
 const firebase = require('firebase');
-const firebaseConfig = require('./firebaseConfig');
+const firebaseConfig = require('./firebase-config');
+
 // Server Side React
 const { match, RouterContext } = require('react-router');
 const ReactDOMServer = require('react-dom/server');
@@ -21,6 +22,7 @@ const EventController = require('./app/js/server/controllers/events-controller')
 
 const app = express();
 firebase.initializeApp(firebaseConfig);
+
 app.eventRef = firebase.database().ref('events');
 
 // event api endpoints
